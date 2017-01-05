@@ -6,3 +6,11 @@ body {
     align-items: center;
 }
 
+/* this class use width/height in pixel because it aim to reproduce a A4 doc */ 
+.document {
+    background: #fff;
+    width: 743px;   
+    height: 1083px; 
+    box-shadow: 0px 0px 3px 2px #bcb7b7;
+    padding: 50px;
+}
