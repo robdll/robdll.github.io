@@ -5,13 +5,15 @@ document.addEventListener("DOMContentLoaded", function(){
     "software engineer ", 
     "nerd" 
   ];
-  
+  var color = [ "white", 
+    "orange", 
+    "purple", 
+    "gray", 
+    "#1ec503" 
+  ];
   var whoAmIparagraph = document.getElementById('whoAmI');
   var professionIndex  = 0;
-
-    addProfession() 
-
-
+  addProfession() 
   setInterval(function(){
     professionIndex = -1;
     deleteProfession();
@@ -20,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
   function addProfession(){
     var word = ' '+professions[professionIndex];
     var index = 0;
+    whoAmIparagraph.style.color = color[professionIndex];
     var adder = setInterval(function(){ 
       whoAmIparagraph.innerHTML = whoAmIparagraph.innerHTML + word[index];
       index++;
