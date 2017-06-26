@@ -100,6 +100,7 @@ section p {
 
 article {
   text-align: center;
+  min-width: 250px;
 }
 
 #portfolio article heading {
@@ -119,9 +120,61 @@ article span {
   font-size: 0.5em;
   padding: 3px;
 }
+
+#thumbnail {
+  max-width: 450px;
+  min-height: 160px;
+  background-image: url("http://img.youtube.com/vi/pUZIxpSm8Jw/0.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* horizontal center*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /** ANIMATION */
 
 @keyframes nav-link-hover {
   from { color: white;   }
   to { color: orange;   }
+}
+
+/** MEDIA QUERY */
+
+@media (min-width: 280px) {
+  #thumbnail {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 300px) {
+  #thumbnail {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 300px) {
+  #thumbnail {
+    min-height: 180px;
+  }
+}
+
+@media (min-width: 350px) {
+  #thumbnail {
+    min-height: 200px;
+  }
+}
+
+
+@media (min-width: 385px) {
+  #thumbnail {
+    min-height: 220px;
+  }
+}
+
+@media (min-width: 425px) {
+  #thumbnail {
+    min-height: 240px;
+  }
 }
