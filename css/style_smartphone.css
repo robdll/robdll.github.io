@@ -26,7 +26,7 @@ a:active {
 a.anchor {
   display: block;
   position: relative;
-  top: -75px;
+  top: -100px;
   visibility: hidden;
 }
 
@@ -45,9 +45,9 @@ nav {
   position: fixed;
   width: 100%;
   border-bottom: 2px dotted white;
-  padding: 0px 10px;
   box-sizing: border-box;
   z-index: 2;
+  padding: 10px;
 }
 
 nav a:hover {
@@ -101,6 +101,8 @@ section p {
   flex-direction: column;
   height: 100%;
   justify-content: flex-start;
+  margin-bottom: 100px;
+  margin-top: 35px; 
 }
 
 #portfolio heading {
@@ -124,10 +126,6 @@ article {
   font-weight: 600;
   margin-bottom: 0px;
   display: block;
-}
-
-#portfolio span {
-  margin: 40px auto;
 }
 
 article > div > span {
@@ -193,6 +191,12 @@ figure{
   color: limegreen;
 }
 
+footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  border-top: 2px dotted white;
+}
 
 /** ANIMATION */
 
