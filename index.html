@@ -1,18 +1,23 @@
 <html>
 <head>
-  <!--my style -->
-  <link rel='stylesheet' type='text/css' media='(min-width: 320px) and (max-width: 700px)' href='css/style_smartphone.css' />
+  <!--## My style -->
+  <!-- these allow the user to download only the css related to its device --> 
+  <link rel='stylesheet' type='text/css' media='(max-width: 700px)' href='css/style_smartphone.css' />
   <link rel='stylesheet' type='text/css' media='(min-width: 701px)' href='css/style_tablet.css' />
-  <!--Font Awesome -->
+  <!-- I wanted to avoid any library but Font Awesome s awesome -->
   <link rel="stylesheet" type='text/css' href="css/font-awesome.min.css">
   <link rel="application/font-woff" type='text/css' href='fonts/fontawesome-webfont.woff'>
   <link rel="application/font-woff" type='text/css' href='fonts/fontawesome-webfont.woff2' >
   <link rel="application/font-woff" type='text/css' href='fonts/fontawesome-webfont.eot' >
-  <!--jQuery -->
+  <!--jQuery is used by smoothScroll and lazyYoutubeVideo because it was too painfull to make it in plain js-->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <!--my scripts -->
+  <!--## My scripts -->
+  <!-- fakeWriter emule the typing and deleting in the first section -->
+  <!-- smoothScroll  deleting in the first section -->
+  <!-- lazyYoutubeVideo allow the user to load the video after clicking on the thumbnail -->
   <script src="js/fakeWriter.js"></script>
   <script src="js/smoothScroll.js"></script>
+  <script src="js/lazyYoutubeVideo.js"></script>
 
 </head>
 
@@ -34,32 +39,41 @@
       <p id="whoAmI"></p>
      </section>
   
-    <section id="portfolio"> 
+    <section id="portfolio">
+      <!--article  > 
+        <heading># Mind Game</heading>
+        <div> <span>2D Game</span> <span>GameMaker</span> </div>
+        <div class="thumbnail" onclick="loadVideo(0)" onmouseover="toggleDescription(0)" onmouseleave="toggleDescription(0)"></div>
+        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+      </article-->
+      
+      <article> 
+        <heading># Obsession</heading>
+        <div> <span>2D Game</span> <span>Unity3D</span> <span>C#</span></div>
+        <figure class="fig-container">
+          <div class="card">
+            <div img class="front face"></div>
+            <div class="back face"><p>This is nice for exposing more information about an image.</p></div>
+          </div>
+          <!--div class="thumbnail" onclick="loadVideo(1)"></div-->
+          
+        </figure>
+        <!--span><i class="fa fa-chevron-down" aria-hidden="true"></i></span-->
+      </article>
+
+      <!--article> 
+        <heading># Tango</heading>
+        <div> <span>2D Game</span> <span>Unity3D</span> <span>C#</span></div>
+        <div class="thumbnail" onclick="loadVideo(2)"></div>
+        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+      </article>
+
+      <article> 
+        <heading># Dr Jack & Mr White</heading>
+        <div> <span>2D Game</span> <span>Unity3D</span> <span>C#</span></div>
+        <div class="thumbnail" onclick="loadVideo(3)"></div>
+      </article-->
     </section>
-    <!--section id="portfolio"> 
-      <heading>You can filter using these button</heading>
-      <div>
-        <button>uno</button>
-        <button>uno</button>
-        <button>uno</button>
-        <button>uno</button>
-        <button>uno</button>
-        <button>uno</button>
-        <button>uno</button>
-        <button>uno</button>
-      </div>
-      <div  id="article-container">
-      <article> <heading>Dr Jack & Mr White</heading> </article>
-      <article> </article>
-      <article> </article>
-      <article> </article>
-      <article> </article>
-      <article> </article>
-      <article> </article>
-      <article> </article>
-      </div>
-    </section-->
-    
   </main>
 </body>
 </html>

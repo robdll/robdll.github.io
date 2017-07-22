@@ -110,6 +110,10 @@ article {
   display: block;
 }
 
+#portfolio span {
+  margin: 40px auto;
+}
+
 article iframe {
   border: none;
 }
@@ -121,18 +125,59 @@ article span {
   padding: 3px;
 }
 
-#thumbnail {
+
+.fig-container {
   max-width: 450px;
   min-height: 160px;
+  /* horizontal center*/
+  margin-left: auto;
+  margin-right: auto;
+  perspective: 1000;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.fig-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.face.front {
   background-image: url("http://img.youtube.com/vi/pUZIxpSm8Jw/0.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* horizontal center*/
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 18px;  
 }
 
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+  border-radius: 18px;  
+}
+
+
+/* 
+
+  */
 /** ANIMATION */
 
 @keyframes nav-link-hover {
@@ -143,38 +188,38 @@ article span {
 /** MEDIA QUERY */
 
 @media (min-width: 280px) {
-  #thumbnail {
+  .fig-container {
     margin-top: 5px;
   }
 }
 
 @media (min-width: 300px) {
-  #thumbnail {
+  .fig-container {
     margin-top: 10px;
   }
 }
 
 @media (min-width: 300px) {
-  #thumbnail {
+  .fig-container {
     min-height: 180px;
   }
 }
 
 @media (min-width: 350px) {
-  #thumbnail {
+  .fig-container {
     min-height: 200px;
   }
 }
 
 
 @media (min-width: 385px) {
-  #thumbnail {
+  .fig-container {
     min-height: 220px;
   }
 }
 
 @media (min-width: 425px) {
-  #thumbnail {
+  .fig-container {
     min-height: 240px;
   }
 }

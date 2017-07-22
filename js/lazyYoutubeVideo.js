@@ -11,3 +11,15 @@ function loadVideo(id) {
   iframe.src = 'http://www.youtube.com/embed/pUZIxpSm8Jw?html5=1';
   videoContainer.appendChild(iframe);
 }
+
+function toggleDescription(index) {
+  var descriptions = [
+    'Built @Chicago Glogal Game Jam event, based on the given theme WAVES, in this game you need to synchronize with a child branwaives to helping walk through his fears.'
+  ];
+  var thumbnail = $('.thumbnail').eq(index);
+  thumbnail.toggleClass("description");
+
+  thumbnail.innerHTML = "New text!";
+  console.log(thumbnail)
+  /*list.removeChild(list.childNodes[0]);*/
+}
