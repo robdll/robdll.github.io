@@ -101,9 +101,20 @@ section p {
   flex-direction: column;
   height: 100%;
   justify-content: flex-start;
-  margin-bottom: 100px;
   margin-top: 35px; 
+  overflow: auto;
 }
+
+.face.back::-webkit-scrollbar ,#portfolio::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+.face.back::-webkit-scrollbar-thumb, #portfolio::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
 
 #portfolio heading {
   font-size: 0.5em;
