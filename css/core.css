@@ -150,7 +150,7 @@ section {
 article {
   text-align: center;
   min-width: 250px;
-  margin: 75px 0px;
+  margin: 75px 10px;
 }
 
 article p {
@@ -294,5 +294,8 @@ footer{
 @media (min-width: 425px) {
   .fig-container {
     min-height: 240px;
+  }
+  artcle { 
+    margin: 75px 0px;
   }
 }
