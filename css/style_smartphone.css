@@ -109,10 +109,6 @@ section p {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
 }
-/* optional: show position indicator in red */
-.face.back::-webkit-scrollbar-thumb, #portfolio::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
 
 
 
