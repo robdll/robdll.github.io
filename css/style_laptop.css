@@ -1,0 +1,16 @@
+#portfolio {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#portfolio article {
+  margin: 30px 20px;
+}
+
+
+.enlight {
+  display: none;
+}
+

@@ -23,11 +23,15 @@ a:active {
   font-size: 1.1em;
 }
 
-a.anchor {
+a.anchor, a.portfolioanchor {
   display: block;
   position: relative;
   top: -100px;
   visibility: hidden;
+}
+
+a.portfolioanchor {
+  top: -40px;
 }
 
 .limegreen {
