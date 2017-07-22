@@ -76,7 +76,6 @@ i.fa-instagram:hover {
 }
 
 section {
-  height: 100%;
   justify-content: center;
 }
 
@@ -96,13 +95,15 @@ section p {
   line-height: 1.5;
 }
 
+#whoAmI  {
+  min-height: 75px;
+}
+
 #portfolio {
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: flex-start;
   margin-top: 35px; 
-  overflow-y: auto;
 }
 
 .face.back::-webkit-scrollbar ,#portfolio::-webkit-scrollbar {
