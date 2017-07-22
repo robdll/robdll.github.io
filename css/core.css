@@ -86,7 +86,8 @@ nav a:hover {
   animation-name: nav-link-hover;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-out
+  animation-timing-function: ease-out;
+  cursor: hand; 
 }
 
 
