@@ -12,6 +12,29 @@ body {
   color: white;
 }
 
+.fa-youtube-play {
+  color: #8B0000;  
+}
+
+.fa-eye {
+  color: gray
+}
+
+.fa-eye:hover {
+  color: aquamarine;
+}
+
+.fa-youtube-play:hover {
+  color: red;  
+}
+
+.fa-github:hover {
+  color: limegreen;  
+}
+
+.fa-github {
+  color: #24292e;  
+}
 
 a,
 a:hover,
@@ -32,6 +55,10 @@ a.anchor, a.portfolioanchor {
 
 a.portfolioanchor {
   top: -40px;
+}
+
+h4 {
+  margin-bottom: 0px;
 }
 
 .limegreen {
@@ -83,10 +110,6 @@ section {
   justify-content: center;
 }
 
-section p {
-  margin: 10px;
-}
-
 #me {
   height: 100vh;
   display: flex;
@@ -129,6 +152,16 @@ article {
   margin: 75px 0px;
 }
 
+article p {
+  margin-top: 0px;
+}
+
+.face .fa {
+  font-size: 2em;
+  margin: 0px 5px;
+}
+
+
 #portfolio:first-child {
   margin: 0px 0px 75px 0px;
 }
@@ -141,11 +174,13 @@ article {
 }
 
 article > div > span {
-  background: gray;
-  border-radius: 8px;
+  background: #777;
+  border-radius: 6px;
   font-size: 0.5em;
   padding: 3px;
+  font-weight: 700;
 }
+
 
 figure{
   margin-bottom: 0px;
@@ -181,6 +216,11 @@ figure{
   border-radius: 17px;  
 }
 
+.face b {
+  font-size: 1.3em;
+  margin-right: 3px; 
+}
+
 .face.front {
   background-position: center;
   background-size: cover;
@@ -195,7 +235,7 @@ figure{
   color: white;
   font-size: 0.5em;
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.5;
   overflow-y: auto;
 }
 
