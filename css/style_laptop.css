@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 100px;
+    min-height: 100vh;
 }
 
 #portfolio article {
@@ -14,3 +15,12 @@
   display: none;
 }
 
+@media (min-width: 1420px) {
+  #portfolio article {
+    min-width: 350px;
+    margin: 5px 20px ;
+  }
+  a.portfolioanchor {
+    top: -35px;
+  }
+}
