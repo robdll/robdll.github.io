@@ -3,7 +3,6 @@ html {
   width: 100%;
 }  
 body {
-  height: 100%;
   width: 100%;
   margin: 0px;
   display: flex;
@@ -102,7 +101,6 @@ section p {
   flex-direction: column;
   height: 100%;
   justify-content: flex-start;
-  padding: 60px 5px  0px 5px;
 }
 
 #portfolio heading {
@@ -189,6 +187,10 @@ figure{
   text-align: justify;
   line-height: 1.8;
   overflow-y: auto;
+}
+
+.enlight:hover{
+  color: limegreen;
 }
 
 
