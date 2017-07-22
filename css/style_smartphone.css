@@ -102,7 +102,7 @@ section p {
   height: 100%;
   justify-content: flex-start;
   margin-top: 35px; 
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .face.back::-webkit-scrollbar ,#portfolio::-webkit-scrollbar {
