@@ -11,27 +11,23 @@ document.addEventListener("DOMContentLoaded", function(){
     "gray", 
     "#1ec503" 
   ];
-  var whoAmIparagraph = document.getElementById('whoAmI');
+  var whoAmI = document.getElementById('whoAmI');
+
   var professionIndex  = 0;
   addProfession() 
-  setInterval(function(){
-    professionIndex = -1;
-    deleteProfession();
-  },25000) 
+  setInterval(function(){ whoAmI.innerHTML = 'nerd'; },25000);
   
   function addProfession(){
     var word = ' '+professions[professionIndex];
     var index = 0;
-    whoAmIparagraph.style.color = color[professionIndex];
+    whoAmI.style.color = color[professionIndex];
     var adder = setInterval(function(){ 
-      whoAmIparagraph.innerHTML = whoAmIparagraph.innerHTML + word[index];
+      whoAmI.innerHTML = whoAmI.innerHTML + word[index];
       index++;
       if(index === word.length) { 
         clearInterval(adder);
         if(professionIndex !== professions.length-1) {
           deleteProfession();  
-        }
-        else {
         }
       }
     }, 150);
@@ -39,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function(){
   
 
   function deleteProfession() {  
-    var backSpacer = setInterval(function(){ 
-      whoAmIparagraph.innerHTML = whoAmIparagraph.innerHTML.substring(0, whoAmIparagraph.innerHTML.length-1);
-      if(!whoAmIparagraph.innerHTML.length) {         
+    var backSpacer = setInterval(function(){  
+      whoAmI.innerHTML = whoAmI.innerHTML.substring(0, whoAmI.innerHTML.length-1);
+      if(!whoAmI.innerHTML.length) {         
         professionIndex++;
         clearInterval(backSpacer);
         addProfession();
       }
     }, 80);
   }
- 
+
 });
