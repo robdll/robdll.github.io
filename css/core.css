@@ -88,7 +88,6 @@ nav a:hover, nav a i.fa:hover {
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
   cursor: hand; 
-  font-size: 1.3em;
 }
 
 nav a i.fa:hover {

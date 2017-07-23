@@ -19,6 +19,9 @@ nav a i.fa {
   font-weight: 700;
 }
 
+nav a:hover, nav a i.fa:hover {
+  font-size: 1.3em;
+}
 
 nav a {
   font-size: 1.3em;
