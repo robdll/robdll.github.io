@@ -10,3 +10,7 @@ function navigatorSwitcher() {
   smoothScroll(nextSection);
 }
 
+function removeClassLook(item){
+  item.classList.remove("look-here");
+}
+

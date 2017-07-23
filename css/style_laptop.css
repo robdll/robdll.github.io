@@ -10,6 +10,20 @@
   margin: 30px 20px;
 }
 
+nav {
+  padding: 3px 10px;
+}
+
+nav a i.fa {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+
+nav a {
+  font-size: 1.3em;
+  font-weight: 700;
+}
 
 .enlight {
   display: none;
