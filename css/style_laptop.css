@@ -4,6 +4,7 @@
     justify-content: center;
     margin-bottom: 100px;
     min-height: 100vh;
+    align-content: center;
 }
 
 #portfolio article {
