@@ -231,6 +231,10 @@ figure{
   margin-right: 3px; 
 }
 
+.face p {
+  font-size: 1.1em;
+}
+
 .face.front {
   background-position: center;
   background-size: cover;
