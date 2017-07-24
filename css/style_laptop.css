@@ -36,7 +36,7 @@ nav a {
 @media (min-width: 1420px) {
   #portfolio article {
     min-width: 350px;
-    margin: 5px 20px ;
+    margin: 30px 20px ;
   }
   a.portfolioanchor {
     top: -35px;
