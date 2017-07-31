@@ -202,7 +202,6 @@ figure{
   /* horizontal center*/
   margin-left: auto;
   margin-right: auto;
-  perspective: 1000;
 }
 
 .card {
