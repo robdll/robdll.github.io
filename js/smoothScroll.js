@@ -4,9 +4,10 @@ function smoothScroll(id) {
   }, 1000);
 }
 
-var nextSection = '';
+var nextSection = '#me';
 function navigatorSwitcher() {
-  nextSection = nextSection === '#portfolioanchor' ? '#me' : '#portfolioanchor';
+  nextSection = nextSection === '#me' ? '#portfolioanchor'  :
+                nextSection === '#portfolioanchor' ? '#footer' : '#me';
   smoothScroll(nextSection);
 }
 
