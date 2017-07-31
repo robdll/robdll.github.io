@@ -206,7 +206,6 @@ figure{
 }
 
 .card {
-  width: 100%;
   min-height: 250px;
   transform-style: preserve-3d;
   transition: all 0.5s linear;
@@ -245,12 +244,15 @@ figure{
   display: block;
   transform: rotateY(180deg);
   box-sizing: border-box;
-  padding: 10px;
   color: white;
   font-size: 0.5em;
   text-align: justify;
   line-height: 1.5;
   overflow-y: auto;
+}
+
+.face.back p {
+  margin: 10px;
 }
 
 .enlight:hover{
