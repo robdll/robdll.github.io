@@ -28,13 +28,25 @@ body {
   color: red;  
 }
 
-.fa-github:hover {
+.card .fa-github:hover {
   color: limegreen;  
 }
 
-.fa-github {
+.card .fa-github {
   color: #2E8B57;  
 }
+
+
+.fa-github:hover {
+  color: #24292e;
+}
+
+.fa-free-code-camp:hover {
+  color: darkgreen;
+}
+
+
+
 
 a,
 a:hover,
