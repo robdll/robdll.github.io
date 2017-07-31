@@ -206,6 +206,7 @@ figure{
 }
 
 .card {
+  box-sizing: border-box;
   min-height: 250px;
   transform-style: preserve-3d;
   transition: all 0.5s linear;
