@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: supernintendo;
+    src: url(assets/font/PressStart2P.ttf) format("truetype");
+}
+
+*  { 
+    font-family: supernintendo; 
+}
