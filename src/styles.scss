@@ -3,4 +3,11 @@
     src: url(assets/font/PressStart2P.ttf) format("truetype");
 }
 
+body, html {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    height: 100%;
+}
+
 * { font-family: supernintendo; }
