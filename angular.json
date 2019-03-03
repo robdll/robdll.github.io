@@ -7,11 +7,9 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "sass"
-        }
+      "prefix": "",
+      "schematics": { 
+        "@schematics/angular:component": { "style": "sass" }
       },
       "architect": {
         "build": {
@@ -26,9 +24,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": [ "src/styles.scss" ],
             "scripts": [],
             "es5BrowserSupport": true
           },
