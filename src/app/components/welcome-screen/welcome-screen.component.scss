@@ -1,0 +1,32 @@
+.welcome-screen {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.welcome-title, .welcome-subtitle {
+    margin: 3px;
+}
+
+.welcome-title {
+    letter-spacing: 2px;
+}
+
+.welcome-screen {
+    animation: falling 3s forwards;
+}
+  
+@keyframes falling {
+    0%{
+        transform: translateY(-60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
