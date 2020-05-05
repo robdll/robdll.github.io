@@ -1,0 +1,47 @@
+.wrapper {
+  height: 100%;
+  line-height: 1.5;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%; 
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: table;
+}
+
+.fixed-bg h1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.scroll-bg {
+  background-color: #0f0f0a;
+  padding: 10px 70px;
+  color: #676767;
+}
+
+/* first section */
+
+.bg-1 {
+  background-image: url('/assets/bg1.webp');
+}
+
+/* third section */
+
+.bg-2 {
+  background-image: url('/assets/bg2.webp');
+}
+
+/* fifth section */
+
+.bg-3 {
+  background-image: url('/assets/bg3.webp');
+}

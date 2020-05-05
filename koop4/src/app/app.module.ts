@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
 import { NavbarModule } from './navbar/navbar.module';
+import { ContentModule } from './content/content.module';
 import { FooterModule } from './footer/footer.module';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { FooterModule } from './footer/footer.module';
     BrowserModule,
     BrowserAnimationsModule,
     NavbarModule,
+    ContentModule,
     FooterModule,
   ],
   providers: [],
