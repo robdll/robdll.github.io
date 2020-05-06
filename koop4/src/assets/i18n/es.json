@@ -1,3 +1,9 @@
 {
-    "HELLO": "hola"
+    "HELLO": "hola",
+    "LANGUAGE": {
+        "ENGLISH": "English",
+        "ITALIAN": "Italiano",
+        "ESPANOL": "Español",
+        "PORTUGUES": "Portuguese"
+    }
 }

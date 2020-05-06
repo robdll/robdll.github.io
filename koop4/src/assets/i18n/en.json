@@ -1,3 +1,9 @@
 {
-    "HELLO": "hello dumbass"
+    "HELLO": "hello dumbass",
+    "LANGUAGE": {
+        "ENGLISH": "English",
+        "ITALIAN": "Italiano",
+        "ESPANOL": "Español",
+        "PORTUGUES": "Portuguese"
+    }
 }
