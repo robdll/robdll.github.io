@@ -23,8 +23,14 @@
 }
 
 .scroll-bg {
-  padding: 10px 70px;
   color: #5a5a5a;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 85px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .bg-1 {
@@ -65,4 +71,8 @@
 
 .action:visited {
   color: inherit;
+}
+
+.description {
+  font-size: 0.6em;
 }

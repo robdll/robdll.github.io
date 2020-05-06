@@ -12,4 +12,9 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  smoothscroll(target):void {
+    const element = document.querySelector(`#${target}`);
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
 }

@@ -6,13 +6,15 @@
       <h4 class="subtitle" translate>ME.SUBTITLE-2</h4>
       <h4 class="subtitle" translate>ME.SUBTITLE-3</h4>
       <span> </span>
-      <a class="action" href="#project">
+      <div class="action" (click)="smoothscroll('project')">
         <h4 class="action__text" translate>ME.DISCOVER</h4>
         <mat-icon >keyboard_arrow_down</mat-icon>
-      </a>
+      </div>
     </section>
     
-    <mat-toolbar id="project" class="scroll-bg">
+    <mat-toolbar id="project" class="scroll-bg" translate>
+      <div translate>TECHNOLOGIES.TITLE</div>
+      <div class="description" translate>TECHNOLOGIES.DESCRIPTION</div>
     </mat-toolbar>
 
     <div class="fixed-bg bg-2">

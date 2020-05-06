@@ -15,5 +15,9 @@
         "SUBTITLE-2": "IT Architect",
         "SUBTITLE-3": "Mentor",
         "DISCOVER": "Saber más..."
+    },
+    "TECHNOLOGIES": {
+        "TITLE": "Tecnologías, Lenguajes y Herramientas",
+        "DESCRIPTION": "Aquí puedes encontrar más información sobre mis habilidades"
     }
 }
