@@ -9,21 +9,20 @@ import { trigger, transition, style, animate } from '@angular/animations';
     trigger('carouselAnimation', [
       transition('void => *', [
         style({ opacity: 0 }),
-        animate('1300ms', style({ opacity: 1 }))
+        animate('800ms', style({ opacity: 1 }))
       ]),
       transition('* => void', [
-        animate('1300ms', style({ opacity: 0 }))
+        animate('800ms', style({ opacity: 0 }))
       ])
     ])
   ]
 })
 export class CarouselComponent  {
 
-  slides = [
-    { src: "https://placekitten.com/200/150"},
-    { src: "https://placekitten.com/200/250"},
-    { src: "https://placekitten.com/200/350"},
-    { src: "https://placekitten.com/200/450" }
+  cards = [
+    { title: "Frontend", items: ['uno', 'due', 'tre' ]},
+    { title: "Backend", items: ['uno', 'due', 'tre' ]},
+    { title: "System", items: ['uno', 'due', 'tre' ]},
   ];
   currentSlide = 0;
   
@@ -31,13 +30,19 @@ export class CarouselComponent  {
 
   onPreviousClick() {
     const previous = this.currentSlide - 1;
-    this.currentSlide = previous < 0 ? this.slides.length - 1 : previous;
+    this.currentSlide = undefined;
+    setTimeout(() => {
+      this.currentSlide = previous < 0 ? this.cards.length - 1 : previous;
+    }, 800);
     console.log("previous clicked, new current slide is: ", this.currentSlide);
   }
 
   onNextClick() {
     const next = this.currentSlide + 1;
-    this.currentSlide = next === this.slides.length ? 0 : next;
+    this.currentSlide = undefined;
+    setTimeout(() => {
+      this.currentSlide = next === this.cards.length ? 0 : next;
+    }, 800);
     console.log("next clicked, new current slide is: ", this.currentSlide);
   }
 

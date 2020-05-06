@@ -22,6 +22,10 @@
   }
 }
 
+.fixed-bg.bg-2 {
+  padding: 0px;
+}
+
 .scroll-bg {
   color: #5a5a5a;
   overflow: hidden;
@@ -75,4 +79,10 @@
 
 .description {
   font-size: 0.6em;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
