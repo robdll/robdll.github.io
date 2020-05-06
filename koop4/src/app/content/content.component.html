@@ -17,8 +17,17 @@
       <div class="description" translate>TECHNOLOGIES.DESCRIPTION</div>
     </mat-toolbar>
 
-    <div class="fixed-bg bg-2">
-    </div>
+    <section class="fixed-bg bg-2">
+      <app-carousel></app-carousel>
+      <!-- <mat-card **ngFor="let card of techCards">
+        <mat-card-header translate>{{ 'TECHNOLOGIES.'+card.type | translate }}</mat-card-header>
+        <mat-card-content>   
+          <mat-list-item *ngFor="let item of card.items">item</mat-list-item>
+       </mat-card-content>
+      </mat-card> -->
+    </section>
+
+
     
     <div class="scroll-bg">
       some text
