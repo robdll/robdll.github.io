@@ -8,5 +8,12 @@
     },
     "SNACK": {
         "MODIFY": "Idioma modificado em português"
+    },
+    "ME": {
+        "TITLE": "Oi, eu ou Rob",
+        "SUBTITLE-1": "Full-Stack Developer",
+        "SUBTITLE-2": "IT Architect",
+        "SUBTITLE-3": "Mentor",
+        "DISCOVER": "Descubra mais..."
     }
 }

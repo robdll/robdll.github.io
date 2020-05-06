@@ -8,5 +8,12 @@
     },
     "SNACK": {
         "MODIFY": "Ligua modificata in italiano"
+    },
+    "ME": {
+        "TITLE": "Hey, io sono Rob",
+        "SUBTITLE-1": "Full-Stack Developer",
+        "SUBTITLE-2": "IT Architect",
+        "SUBTITLE-3": "Mentor",
+        "DISCOVER": "Scopri di più..."
     }
 }
