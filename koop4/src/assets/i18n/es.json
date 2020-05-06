@@ -4,6 +4,9 @@
         "ENGLISH": "English",
         "ITALIAN": "Italiano",
         "ESPANOL": "Español",
-        "PORTUGUES": "Portuguese"
+        "PORTUGUES": "Português"
+    },
+    "SNACK": {
+        "MODIFY": "Idioma modificado en español"
     }
 }

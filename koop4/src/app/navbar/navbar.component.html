@@ -4,11 +4,11 @@
 </mat-toolbar>
 
  <mat-menu #languagemenu="matMenu">
-    <div class="language_option" translate>LANGUAGE.ENGLISH</div>
+    <div class="language_option" (click)="displaySnack('en')" translate>LANGUAGE.ENGLISH</div>
     <mat-divider></mat-divider>
-    <div class="language_option" translate>LANGUAGE.ITALIAN</div>
+    <div class="language_option" (click)="displaySnack('it')" translate>LANGUAGE.ITALIAN</div>
     <mat-divider></mat-divider>
-    <div class="language_option" translate>LANGUAGE.ESPANOL</div>
+    <div class="language_option" (click)="displaySnack('es')" translate>LANGUAGE.ESPANOL</div>
     <mat-divider></mat-divider>
-    <div class="language_option" translate>LANGUAGE.PORTUGUES</div>
+    <div class="language_option" (click)="displaySnack('pt')" translate>LANGUAGE.PORTUGUES</div>
   </mat-menu> 
