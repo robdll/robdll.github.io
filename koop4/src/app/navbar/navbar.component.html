@@ -1,20 +1,14 @@
 <mat-toolbar class="navbar">
     Rob.dll  
-    <mat-icon class="icon">translate</mat-icon>
+    <mat-icon class="icon" [matMenuTriggerFor]="languagemenu">translate</mat-icon>
 </mat-toolbar>
 
-<!-- <mat-menu #languagemenu="matMenu">
-    [matMenuTriggerFor]="languagemenu"
-    <button mat-menu-item>
-      <mat-icon>dialpad</mat-icon>
-      <span>Redial</span>
-    </button>
-    <button mat-menu-item disabled>
-      <mat-icon>voicemail</mat-icon>
-      <span>Check voice mail</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>notifications_off</mat-icon>
-      <span>Disable alerts</span>
-    </button>
-  </mat-menu> -->
+ <mat-menu #languagemenu="matMenu">
+    <div class="language_option" translate>LANGUAGE.ENGLISH</div>
+    <mat-divider></mat-divider>
+    <div class="language_option" translate>LANGUAGE.ITALIAN</div>
+    <mat-divider></mat-divider>
+    <div class="language_option" translate>LANGUAGE.ESPANOL</div>
+    <mat-divider></mat-divider>
+    <div class="language_option" translate>LANGUAGE.PORTUGUES</div>
+  </mat-menu> 

@@ -11,7 +11,14 @@ $icon-bg-color: #d3d3d3;
     font-size: 1.2em;
 }
 
-.icon:hover {
+.icon:hover,.language_option:hover {
     cursor: pointer;
     background-color: $icon-bg-color;
+}
+
+.language_option {
+    color: $navbar-font-color;
+    padding: 5px;
+    font-size: 0.7em;
+    color: #5a5a5a;
 }

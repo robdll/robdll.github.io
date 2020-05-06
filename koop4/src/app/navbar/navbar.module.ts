@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
 import { NavbarComponent } from './navbar.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -12,6 +15,9 @@ import { NavbarComponent } from './navbar.component';
     CommonModule,
     MatToolbarModule,
     MatIconModule,
+    MatMenuModule,
+    MatDividerModule,
+    TranslateModule
   ],
   exports: [
     NavbarComponent
