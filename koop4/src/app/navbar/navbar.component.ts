@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +6,6 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent{
-
-  faLanguage = faLanguage;
 
   constructor() { }
 
