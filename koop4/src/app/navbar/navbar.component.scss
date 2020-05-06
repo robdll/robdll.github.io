@@ -1,5 +1,17 @@
 $navbar-font-color: #5a5a5a;
+$icon-bg-color: #d3d3d3;
 
 .navbar{
+    display: flex;
+    justify-content: space-between;
     color: $navbar-font-color;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: $icon-bg-color;
 }
