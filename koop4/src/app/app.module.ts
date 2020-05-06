@@ -7,7 +7,13 @@ import { NavbarModule } from './navbar/navbar.module';
 import { ContentModule } from './content/content.module';
 import { FooterModule } from './footer/footer.module';
 
-import { TranslateModule } from '@ngx-translate/core';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -16,10 +22,18 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule, 
     NavbarModule,
     ContentModule,
     FooterModule,
-    TranslateModule.forRoot()
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+          provide: TranslateLoader,
+          useFactory: (createTranslateLoader),
+          deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
