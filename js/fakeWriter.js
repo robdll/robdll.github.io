@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
   var professions = [ "back-end developer ", 
-    "front-end developer ", 
+    "backend developer ", 
     "game developer ", 
-    "software engineer ", 
-    "nerd" 
+    "software engineer "
   ];
   var color = [ "white", 
     "orange", 
