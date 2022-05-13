@@ -180,6 +180,7 @@ article p {
 }
 
 .face .fa {
+  
   font-size: 2em;
   margin: 0px 5px;
 }
@@ -258,6 +259,7 @@ figure{
 }
 
 .face.front {
+  z-index: 2;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
