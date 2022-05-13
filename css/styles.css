@@ -20,6 +20,12 @@ body {
   color: white;
 }
 
+.nav-logo {
+  height: 60px;
+  width: 60px;
+}
+
+
 .fa-youtube-play {
   color: #8B0000;  
 }
@@ -92,13 +98,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
   position: fixed;
   width: 100%;
-  border-bottom: 2px dotted white;
+  /* border-bottom: 2px dotted white; */
   box-sizing: border-box;
   z-index: 2;
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 nav a:hover, nav a i.fa:hover {
@@ -108,10 +113,6 @@ nav a:hover, nav a i.fa:hover {
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
   cursor: hand; 
-}
-
-nav a i.fa:hover {
-  animation-name: nav-link-hover;
 }
 
 .look-here {
