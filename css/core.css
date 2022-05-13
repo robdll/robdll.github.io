@@ -1,9 +1,16 @@
+@font-face {
+  font-family: BlindForest;
+  src: url('../fonts/BlindForest.woff');
+}
+
+
 html {
   height: 100%;
   width: 100%;
 }  
+
 body {
-  font-family: Changa;
+  font-family: BlindForest;
   width: 100%;
   margin: 0px;
   display: flex;
