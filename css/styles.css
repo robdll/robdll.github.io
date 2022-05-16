@@ -3,10 +3,22 @@
   src: url('../fonts/BlindForest.woff');
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  font-size: calc(80% + 0.8vmin);
+  font-weight: 500;
+}
 
 html {
   height: 100%;
   width: 100%;
+  background-color: white;
+  color: #1a1a1a;
 }  
 
 body {
@@ -15,16 +27,82 @@ body {
   margin: 0px;
   display: flex;
   flex-direction: column;
-  background-color: black;
-  font-size: 2em;
-  color: white;
 }
 
-.nav-logo {
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 10px;
+}
+
+.nav--logo {
   height: 60px;
   width: 60px;
+  filter: drop-shadow(0 0 0.25rem 1a1a1a)
 }
 
+.nav--link-container{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav--link {
+  text-decoration: none;
+  cursor: hand; 
+  margin-right: 25px;
+  padding: 0 10px;
+  position:relative;
+  z-index: 1;
+}
+
+.nav--link,
+.nav--link:after,
+.nav--link:before {
+  transition: all .5s;
+}
+
+.nav--link:hover {
+  color: #dddddd;
+}
+.nav--link:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #1a1a1a;
+  border-radius: 1px;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.nav--link:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+section {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/** NO MORE*/
 
 .fa-youtube-play {
   color: #8B0000;  
@@ -94,26 +172,6 @@ h4 {
   font-size: 1.3em;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  /* border-bottom: 2px dotted white; */
-  box-sizing: border-box;
-  z-index: 2;
-  padding: 5px 10px;
-}
-
-nav a:hover, nav a i.fa:hover {
-  text-decoration: none;
-  animation-name: nav-link-hover;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-  cursor: hand; 
-}
 
 .look-here {
   animation-name: navigator-signal;
