@@ -1,41 +1,46 @@
 document.addEventListener("DOMContentLoaded", function(){
   var professions = [ 
-    "Frontend developer?   ", 
-    "Backend developer?   ", 
-    "Fullstack developer?   ", 
-    "Game developer?   ", 
-    "Software engineer?   "
+    "Frontend developer?", 
+    "Backend developer?", 
+    "Fullstack developer?", 
+    "Game developer?", 
+    "Software engineer?"
   ];
   var whoAmI = document.getElementById('whoAmI');
-
-  var professionIndex  = 0;
+  var professionIdx  = 0;
   addProfession() 
   
   function addProfession(){
-    var word = ' '+professions[professionIndex];
-    var index = 0;
-    var adder = setInterval(function(){ 
-      whoAmI.innerHTML = whoAmI.innerHTML + word[index];
-      index++;
-      if(index === word.length) { 
-        clearInterval(adder);
-        if(professionIndex !== professions.length-1) {
-          deleteProfession();  
-        }
+    let profession = professions[professionIdx];
+    let charIdx = 0;
+    let writer = setInterval(function(){ 
+      whoAmI.innerHTML = whoAmI.innerHTML + profession[charIdx];
+      charIdx++;
+      let professionWritten = charIdx === profession.length;
+      if(professionWritten) { 
+        clearInterval(writer);
+        waitAMoment();  
       }
-    }, 150);
+    }, 120);
   }
   
+  function waitAMoment() {
+    let waitALittle = setInterval(() => {
+      clearTimeout(waitALittle)
+      deleteProfession();
+    }, 800);
+  }
 
-  function deleteProfession() {  
-    var backSpacer = setInterval(function(){  
+  function deleteProfession() { 
+    let deleter = setInterval(function(){  
       whoAmI.innerHTML = whoAmI.innerHTML.substring(0, whoAmI.innerHTML.length-1);
-      if(!whoAmI.innerHTML.length) {         
-        professionIndex++;
-        clearInterval(backSpacer);
+      let professionDeleted = !whoAmI.innerHTML.length;
+      if(professionDeleted) {         
+        professionIdx = professionIdx === 4 ? 1 : professionIdx+1;
+        clearInterval(deleter);
         addProfession();
       }
-    }, 80);
+    }, 60);
   }
 
 });

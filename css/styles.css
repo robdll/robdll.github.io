@@ -105,7 +105,7 @@ nav {
   display: grid;
   padding: 10px;
   grid-template-columns: minmax(100px, 350px) auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: 2fr  100px auto;
   gap: 20px 10px;
   font-size: 3rem;
 }
@@ -123,6 +123,13 @@ nav {
 }
 
 .hero--subtitle {
+  font-size: 1.5rem;
+}
+
+.hero--cta {
+  justify-self: center;
+  border: 1px solid 7a2a30;
+  padding: 15px;
   font-size: 1.5rem;
 }
 
@@ -238,7 +245,6 @@ section {
 #whoAmI  {
   padding-left: 20%;
   padding-top: 10px;
-  min-height: 75px;
 }
 
 #portfolio {
