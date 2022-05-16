@@ -1,25 +1,19 @@
 document.addEventListener("DOMContentLoaded", function(){
-  var professions = [ "back-end developer ", 
-    "backend developer ", 
-    "game developer ", 
-    "software engineer "
-  ];
-  var color = [ "white", 
-    "orange", 
-    "purple", 
-    "gray", 
-    "#1ec503" 
+  var professions = [ 
+    "Frontend developer?   ", 
+    "Backend developer?   ", 
+    "Fullstack developer?   ", 
+    "Game developer?   ", 
+    "Software engineer?   "
   ];
   var whoAmI = document.getElementById('whoAmI');
 
   var professionIndex  = 0;
   addProfession() 
-  setInterval(function(){ whoAmI.innerHTML = 'nerd'; },25000);
   
   function addProfession(){
     var word = ' '+professions[professionIndex];
     var index = 0;
-    whoAmI.style.color = color[professionIndex];
     var adder = setInterval(function(){ 
       whoAmI.innerHTML = whoAmI.innerHTML + word[index];
       index++;

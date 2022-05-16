@@ -94,13 +94,37 @@ nav {
   height: 100%;
 }
 
-section {
-  min-height: 100%;
+.hero {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.hero--container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: minmax(100px, 350px) auto;
+  grid-template-rows: auto auto;
+  gap: 20px 10px;
+  font-size: 3rem;
+}
+
+.hero--img {
+  grid-row: 1 / -1;
+  align-self: center;
+}
+
+.hero--title {
+  align-self: flex-end;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #7a2a30;
+}
+
+.hero--subtitle {
+  font-size: 1.5rem;
+}
 
 /** NO MORE*/
 
@@ -212,6 +236,8 @@ section {
 }
 
 #whoAmI  {
+  padding-left: 20%;
+  padding-top: 10px;
   min-height: 75px;
 }
 
