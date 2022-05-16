@@ -105,8 +105,8 @@ nav {
   display: grid;
   padding: 10px;
   grid-template-columns: minmax(100px, 350px) auto;
-  grid-template-rows: 2fr  100px auto;
-  gap: 20px 10px;
+  grid-template-rows: auto 30%  20% 10% 10%;
+  gap: 40px 25px;
   font-size: 3rem;
 }
 
@@ -127,9 +127,10 @@ nav {
 }
 
 .hero--cta {
+  cursor: pointer;
   justify-self: center;
-  border: 1px solid 7a2a30;
-  padding: 15px;
+  border: 3px solid #7a2a30;
+  padding: 5px 10px;
   font-size: 1.5rem;
 }
 
