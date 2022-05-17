@@ -10,25 +10,32 @@
   position: relative;
   display: block;
   box-sizing: border-box;
+  font-family: BlindForest;
   font-size: calc(80% + 0.8vmin);
   font-weight: 500;
+  color: #23262B;
 }
 
 html {
   height: 100%;
   width: 100%;
-  background-color: white;
-  color: #1a1a1a;
 }  
 
 body {
-  font-family: BlindForest;
+  height:100vh;
   width: 100%;
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
 
 nav {
   display: flex;
@@ -36,14 +43,15 @@ nav {
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
   padding: 10px;
+  background: linear-gradient(to bottom, white, transparent );
 }
 
 .nav--logo {
   height: 60px;
   width: 60px;
-  filter: drop-shadow(0 0 0.25rem 1a1a1a)
+  filter: drop-shadow(0 0 0.25rem 23262B)
 }
 
 .nav--link-container{
@@ -82,7 +90,7 @@ nav {
   height: 1px;
   content: '.';
   color: transparent;
-  background: #1a1a1a;
+  background: #23262B;
   border-radius: 1px;
   visibility: none;
   opacity: 0;
@@ -95,10 +103,20 @@ nav {
 }
 
 .hero {
-  height: 100%;
+  height: 100vh;
+  z-index: 99;
+  background-image: linear-gradient(white, #f4dada); 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero:after  {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
 }
 
 .hero--container {
@@ -123,7 +141,17 @@ nav {
 }
 
 .hero--subtitle {
+  text-indent: 30px;
   font-size: 1.5rem;
+}
+
+.hero--subtitle span {
+  font-weight: 600;
+}
+
+#heroWriter  {
+  text-indent: 70px;
+  padding-top: 10px;
 }
 
 .hero--cta {
@@ -134,9 +162,65 @@ nav {
   font-size: 1.5rem;
 }
 
+
+.parallax {
+  background-image: url(../resources/parallax_bg.jpg);
+  min-height: 200px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.about  {
+  background: #23262B;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about--container{
+  max-width: 80%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+  
+.about--container  .title{
+  font-size: 2rem;
+  color: white;
+  line-height: 1.5;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about--container  img{
+  height: 300px;
+}
+
+.about--container  p{
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.about--container .sign{
+  align-self: flex-end;
+  margin-right: 60px;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
 /** NO MORE*/
 
-.fa-youtube-play {
+
+/* .fa-youtube-play {
   color: #8B0000;  
 }
 
@@ -167,22 +251,14 @@ nav {
 
 .fa-free-code-camp:hover {
   color: darkgreen;
-}
+} */
 
 
 
 
-a,
-a:hover,
-a:visited,
-a:link,
-a:active {
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.1em;
-}
+/*  */
 
-a.anchor, a.portfolioanchor {
+/* a.anchor, a.portfolioanchor {
   display: block;
   position: relative;
   top: -120px;
@@ -202,10 +278,10 @@ h4 {
 }
 .text-medium-big{
   font-size: 1.3em;
-}
+} */
 
 
-.look-here {
+/* .look-here {
   animation-name: navigator-signal;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -225,28 +301,9 @@ i.fa-instagram:hover {
     color:transparent; 
    -webkit-background-clip: text;
    background-clip: text;
-}
+} */
 
-section {
-  justify-content: center;
-}
 
-#me {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5em;
-}
-
-#me p  {
-  text-align: center;
-  line-height: 1.5;
-}
-
-#whoAmI  {
-  padding-left: 20%;
-  padding-top: 10px;
-}
 
 #portfolio {
   display: flex;

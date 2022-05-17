@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
     "Game developer?", 
     "Software engineer?"
   ];
-  var whoAmI = document.getElementById('whoAmI');
+  var whoAmI = document.getElementById('heroWriter');
   var professionIdx  = 0;
   addProfession() 
   
