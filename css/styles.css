@@ -211,7 +211,7 @@ nav {
 .about  p, .contacts p{
   text-align: justify;
   letter-spacing: 0.2rem;
-  font-size: 2.3vw;
+  font-size: 1.6vw;
   color: white;
   margin-top: 25px;
   line-height: 1.5;
@@ -268,7 +268,7 @@ nav {
 }
 
 .service p{
-  font-size: 2vw;
+  font-size: 1.6vw;
   letter-spacing: 0.2rem;
   line-height: 1.5;
 }
