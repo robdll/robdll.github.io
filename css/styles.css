@@ -180,7 +180,7 @@ nav {
   font-size: 1.5rem;
 }
 
-.about  {
+.about, .contacts {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -191,11 +191,12 @@ nav {
 }
 
 .section-container#about .title,
-.section-container#services .title
+.section-container#services .title,
+.section-container#contacts .title
 {
   position: absolute;
   top: 10px;
-  left: 18%;
+  left: 10%;
   font-size: 2rem;
   line-height: 1.5;
   color: white;
@@ -207,7 +208,7 @@ nav {
   height: 375px;
 }
 
-.about  p{
+.about  p, .contacts p{
   text-align: justify;
   letter-spacing: 0.2rem;
   font-size: 2.3vw;
@@ -310,6 +311,19 @@ nav {
   animation: bigUpDown 2.5s alternate infinite ease-in-out;
 }
 
+.service--cta {
+  cursor: pointer;
+  color: #23262B;
+  font-size: 3vw;
+  display: inline;
+  padding: 5px 10px;
+  border: 1px solid #23262B;
+  text-align: right;
+  margin-top: 5px;
+  position: absolute;
+  right: 0;
+}
+
 @keyframes translate {
   to { transform: translatex(900%);}
 }
@@ -323,6 +337,42 @@ nav {
   to { transform: translatey(280px);}
 }
   
+.contacts
+{
+  width: 80%;
+}
+.contacts p{
+  font-size: 4vw;
+  text-align: left;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.contacts ul{
+  width: 100%;
+}
+
+.contacts ul li {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.contacts ul li span {
+  color: white;
+  text-indent: 30px;
+  display: inline;
+}
+
+.contacts ul li a{
+  display: inline;
+  color: white;
+  margin-left: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
   /* footer{
     display: flex;
     justify-content: space-around;
