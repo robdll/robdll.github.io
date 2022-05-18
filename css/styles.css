@@ -192,7 +192,7 @@ nav {
 
 .section-container#about .title,
 .section-container#services .title
- {
+{
   position: absolute;
   top: 10px;
   left: 18%;
@@ -269,11 +269,63 @@ nav {
 .service p{
   font-size: 2vw;
   letter-spacing: 0.2rem;
+  line-height: 1.5;
 }
 
-footer{
-  display: flex;
-  justify-content: space-around;
-  padding: 15px;
-  border-top: 2px dotted white;
-} 
+.icon-1, .icon-2, .icon-3 { 
+  position:absolute;
+  inset: 0;
+  top: 50px;
+  opacity: 0.6;
+  z-index: -1;
+  width:10%;
+  animation: translate 6s infinite linear alternate ;
+}
+
+.icon-2 {
+  top: 100px;
+  animation: translate 3s infinite linear alternate-reverse ;
+}
+
+.icon-3 {
+  top: 150px;
+  animation: translate 4.5s infinite linear alternate ;
+}
+
+.icon-1 img {
+  position:absolute;
+  animation: smallUpDown 2s alternate infinite ease-in-out;
+  width:100%;
+}
+
+.icon-2 img{
+  width:100%;
+  position:absolute;
+  animation: upDown 2s alternate infinite ease-in-out;
+}
+
+.icon-3 img{
+  width:100%;
+  position:absolute;
+  animation: bigUpDown 2.5s alternate infinite ease-in-out;
+}
+
+@keyframes translate {
+  to { transform: translatex(900%);}
+}
+@keyframes smallUpDown {
+  to { transform: translatey(100px);}
+}
+@keyframes upDown{
+  to { transform: translatey(150px);}
+}
+@keyframes bigUpDown {
+  to { transform: translatey(280px);}
+}
+  
+  /* footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-top: 2px dotted white;
+  }  */
