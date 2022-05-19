@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
       title: 'Elaisian',
       description: 'Web Application created in Angular 4 with a REST API in Node Express hosted on AWS. Architecture also includes Lambdas, RDS, and Docker.',
       cover: 'elaisian.webp',
-      website: 'elaisian.com',
+      website: 'https://elaisian.com',
       youtube: 'https://www.youtube.com/c/Elaisian'
     },
     {
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function(){
   // background-image: url("https://via.placeholder.com/300x200.png"); /* The image used - important! */
 
 
-  var portfolioContainer = document.getElementsByClassName('section-container')[0];
+  var portfolioContainer = document.getElementsByClassName('portfolio-container')[0];
 
   cards.forEach( function(card) {
     const flipCard = document.createElement("div");
@@ -117,13 +117,13 @@ document.addEventListener("DOMContentLoaded", function(){
     const flipCardFront = document.createElement("div");
     flipCardFront.classList.add("flip-card-front");
     flipCardFront.appendChild(cardTitle);
-    flipCardFront.style.backgroundImage = "url('./resources/" + card.cover + "')";
+    flipCardFront.style.backgroundImage = "url('../resources/" + card.cover + "')";
 
     const cardResources = document.createElement("div");
     cardResources.classList.add("card-resources");
     if(card.github) {
       const img = document.createElement("img");
-      img.src = './resources/github.svg';
+      img.src = '../resources/github.svg';
       img.alt = 'github logo';
       img.loading = 'lazy';
       const link = document.createElement("a");
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     if(card.youtube) {
       const img = document.createElement("img");
-      img.src = './resources/youtube.svg';
+      img.src = '../resources/youtube.svg';
       img.alt = 'youtube logo';
       img.loading = 'lazy';
       const link = document.createElement("a");
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     if(card.website) {
       const img = document.createElement("img");
-      img.src = './resources/website.svg';
+      img.src = '../resources/website.svg';
       img.alt = 'website logo';
       img.loading = 'lazy';
       const link = document.createElement("a");
