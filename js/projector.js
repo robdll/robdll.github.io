@@ -111,8 +111,8 @@ document.addEventListener("DOMContentLoaded", function(){
       title: 'Mindgame',
       description: 'Isometric adventure game made with Gamemaker whose goal is to sync with a child branwaves to help him walk through his fears.',
       cover: 'mindgame.webp',
-      github: 'https://youtu.be/pUZIxpSm8Jw',
-      youtube: 'https://github.com/robdll/SpicyNerdParty',
+      github: 'https://github.com/robdll/SpicyNerdParty',
+      youtube: 'https://youtu.be/pUZIxpSm8Jw',
       y: '35px',
       x: '3px'
     }
