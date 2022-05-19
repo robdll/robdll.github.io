@@ -112,7 +112,7 @@ nav {
   background-size: cover;
 }
 
-.section-container, .portfolio-container {
+.section-container{ 
   height: 100vh;
   z-index: 99;
   display: flex;
@@ -122,6 +122,10 @@ nav {
 }
 
 .portfolio-container {
+  background-image: linear-gradient(#f4dada, white); 
+  z-index: 99;
+  display: flex;
+  align-items: center;
   min-height: 100vh;
   flex-direction: row;
   flex-wrap: wrap;
@@ -435,9 +439,8 @@ nav {
 }
 
 .title-cutout {
-  background-color: #79777A;
-  border: 1px solid #23262b;
-  opacity: .6;
+  background-color: #7a2a30;
+  color: white;
   font-size: 3vw;
   font-weight: 700;
   margin: 0 auto;
@@ -452,7 +455,7 @@ nav {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgba(35, 38, 43, 0.6);
+  background-color: #7a2a30;
   transform: rotateY(180deg);
 }
 
