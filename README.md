@@ -9,38 +9,41 @@ I'm an obsessive learner digital nomad forged with a highly focused problem-solv
 Retro-gamer tech-addicted passionate about the scientific know-how, I take advantage of my broad skillset driving innovation to products, architectures and processes.
 
 
-Technical Skills (Years) 🏆 
+![100](https://user-images.githubusercontent.com/4103610/169312236-1cab331c-3738-481c-9fb6-d604c7269121.png)
 
- ----------- 😎 Frontend 😎 -----------
-💎 Javascript / Html / CSS (10+)
-🥇 React.js (7+)
-🥇 Angular.js / Angular2 (7+)
-🥈 NextJs (3+)
-🥈 Gatsby (3+)
-🥈 Experience with Material UI / Ant design (4+)
-🥉 Tailwind CSS (2+)
-🥉 Vue.js (2+)
 
- ----------- 🥸 Backend 🥸 -----------
-💎 REST API (10+)
-💎 Node.js - Express (8+)
-🥇 GraphQL/Apollo (5+)
-🥈 TDD - Jest / Mocha / Chai (4+)
-🥈 Java (4+ years)
-🥉 Python (2+)
+Technical Skills (Years) 🏆   
 
- ----------- 🤯 System & Devops 🤯 -----------
-💎 Git (12+)
-💎 AWS EC2, Cloudfront, Route53, S3, Fargate, Lambda (8+)
-🥇 Docker (5+)
-🥈 Redis (4+)
-🥉 Kubernetes (1+)
+ ----------- 😎 Frontend 😎 -----------  
+💎 Javascript / Html / CSS (10+)  
+🥇 React.js (7+)  
+🥇 Angular.js / Angular2 (7+)  
+🥈 NextJs (3+)  
+🥈 Gatsby (3+)  
+🥈 Experience with Material UI / Ant design (4+)  
+🥉 Tailwind CSS (2+)  
+🥉 Vue.js (2+)  
+
+ ----------- 🥸 Backend 🥸 -----------  
+💎 REST API (10+)  
+💎 Node.js - Express (8+)  
+🥇 GraphQL/Apollo (5+)  
+🥈 TDD - Jest / Mocha / Chai (4+)  
+🥈 Java (4+ years)  
+🥉 Python (2+)  
+
+ ----------- 🤯 System & Devops 🤯 -----------  
+💎 Git (12+)  
+💎 AWS EC2, Cloudfront, Route53, S3, Fargate, Lambda (8+)  
+🥇 Docker (5+)  
+🥈 Redis (4+)  
+🥉 Kubernetes (1+)  
  
- ----------- 🎮 Game Development 🎮 -----------
-🥇 Unity3d (4+ )
-🥈 Game Maker Studio (1+)
+ ----------- 🎮 Game Development 🎮 -----------  
+🥇 Unity3d (4+ )  
+🥈 Game Maker Studio (1+)  
 
- ----------- 💾 Databases 💾 -----------
-💎 MySQL (10+ )
-🥇 DynamoDb (8+ )
-🥈 Oracle SQL/PLSQL (4+)
+ ----------- 💾 Databases 💾 -----------  
+💎 MySQL (10+ )  
+🥇 DynamoDb (8+ )  
+🥈 Oracle SQL/PLSQL (4+)  
