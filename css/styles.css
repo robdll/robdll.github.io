@@ -127,6 +127,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  padding: 5%;
 }
 
 .section-container:nth-of-type(odd) {
@@ -387,7 +388,13 @@ nav {
 }
 
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.portfolio-title {
+  width: 100%; 
+  text-align: center;
+  color: #23262b;
+  margin: 45px auto;
+}
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -396,7 +403,6 @@ nav {
   margin: 10px;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -479,3 +485,5 @@ nav {
   width: 40px;
   size: 40px;
 }
+
+
