@@ -62,8 +62,7 @@ nav {
 
 .nav--link {
   text-decoration: none;
-  cursor: hand; 
-  margin-right: 25px;
+  cursor: pointer; 
   padding: 0 10px;
   position:relative;
   z-index: 1;
@@ -236,12 +235,15 @@ nav {
   margin-top: 25px;
   line-height: 1.5;
   width: 80%;
+  background-color: #23262B
 }
 
 .about .sign{
   margin-top: 0;
   text-align: right;
   font-weight: 700;
+  background-color: #23262B;
+  padding: 0 15px;
 }
 
 .section-container#services{
@@ -511,6 +513,8 @@ nav {
   .about p {
     font-size: .8rem;
     width: 85%;
+    padding: 0 15px;
+
   }
   .services {
     padding: 0 2%;
@@ -577,4 +581,18 @@ nav {
     font-size: 1.4rem;
     margin-top: 30px;
   }
+
+  .nav--logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav--link {
+    padding: 3px;
+  }
+
+  .nav--link-container li {
+    margin-right: 5px;
+  }
+  
 }
