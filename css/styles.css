@@ -415,12 +415,15 @@ nav {
   height: 100%;
   text-align: center;
   transition: transform 1.2s;
+  -webkit-transition: transform 1.2s;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
@@ -458,6 +461,7 @@ nav {
 .flip-card-back {
   background-color: #7a2a30;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .flip-card-back p {
