@@ -461,7 +461,7 @@ nav {
 .flip-card-back p {
   text-align: justify;
   padding: 10px;
-  font-size: 1.5vw;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.2;
   color: white;
@@ -489,3 +489,92 @@ nav {
 }
 
 
+@media only screen and (max-width: 1023px) {
+  .hero {
+    grid-template-columns: minmax(100px, 250px) auto;
+  }
+  .hero--title {
+    font-size: 3rem;
+  }
+  .hero--subtitle {
+    font-size: 1.2rem;
+  }
+  .hero--cta {
+    font-size: 1rem;
+  }
+  .about {
+    max-width: 95%;
+  }
+  .about img {
+    height: 300px;
+  }
+  .about p {
+    font-size: .8rem;
+    width: 85%;
+  }
+  .services {
+    padding: 0 2%;
+    gap: 75px;
+  }
+  .services p {
+    font-size: .9rem;
+  }
+
+  .section-container#service {
+    align-items: flex-start;
+    padding-top: 10%;
+  }
+
+  .service--cta {
+    right: 0;
+    margin-top: 30PX;
+  }
+
+  .portfolio-title {
+    font-size: 2rem;
+  }
+
+  .flip-card-back {
+    font-size: .9rem;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero--img {
+    height: 300px;
+  }
+  .hero--subtitle {
+    height: 60px;
+  }
+  .hero--cta {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+  .service--title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .service--cta {
+    margin: 0;
+  }
+  .section-container#services::after {
+    display: none;
+  }
+  .contacts p {
+    font-size: 1.3rem;
+  }
+  .contacts ul {
+    font-size: 1.4rem;
+    margin-top: 30px;
+  }
+}
