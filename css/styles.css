@@ -360,7 +360,7 @@ nav {
   width: 80%;
 }
 .contacts p{
-  font-size: 4vw;
+  font-size: 2.5rem;
   text-align: left;
   justify-content: flex-start;
   width: 100%;
@@ -368,6 +368,7 @@ nav {
 
 .contacts ul{
   width: 100%;
+  font-size: 1.6rem;
 }
 
 .contacts ul li {
