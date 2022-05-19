@@ -164,9 +164,10 @@ nav {
   height: 200px; /* Some height */
 }
 
-.title-catout {
-  background-color: white;
-  box-shadow: inset 0px 0px 5px 1px #23262b;
+.title-cutout {
+  background-color: #79777A;
+  border: 1px solid #23262b;
+  opacity: .6;
   font-size: 3vw;
   font-weight: 700;
   margin: 0 auto;
@@ -176,7 +177,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  mix-blend-mode: screen;
+  /* mix-blend-mode: screen; */
 }
 
 /* Style the back side */

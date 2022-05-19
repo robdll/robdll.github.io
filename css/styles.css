@@ -104,7 +104,7 @@ nav {
 }
 
 .parallax {
-  background-image: url(../resources/parallax_bg.jpg);
+  background-image: url(../resources/parallax_bg.webp);
   min-height: 200px; 
   background-attachment: fixed;
   background-position: center;

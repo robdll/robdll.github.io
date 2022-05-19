@@ -3,96 +3,96 @@ document.addEventListener("DOMContentLoaded", function(){
     {
       title: 'Meu Artelie',
       description: 'Mandala Artist Porfolio. Concept created in Adobe XD, frontend implemented using NextJs using CSS modules.',
-      cover: 'https://via.placeholder.com/300x200.png',
+      cover: 'meuartelie.webp',
       github: 'https://github.com/robdll/meuartelie',
       website: 'https://meuartelie.com',
     },
     {
       title: 'BeMyFan',
       description: 'Web Application built in NextJs with a PHP backend allowing users to share links and sells videos via stripe.',
-      cover: 'https://via.placeholder.com/300x200.png',
+      cover: 'bemyfan.webp',
       website: 'https://bemyfan.com',
     },
     {
       title: 'Elaisian',
       description: 'Web Application created in Angular 4 with a REST API in Node Express hosted on AWS. Architecture also includes Lambdas, RDS, and Docker.',
-      cover: 'https://via.placeholder.com/300x200.png',
+      cover: 'elaisian.webp',
       website: 'elaisian.com',
       youtube: 'https://www.youtube.com/c/Elaisian'
     },
     {
       title: 'Movie Manager',
       description: 'Movie Manager React showcase using redux thunk and themoviedb API to fetch movies and adds them to your favorites list. ',
-      cover: 'movieManager.png',
+      cover: 'movieManager.webp',
       github: 'https://github.com/robdll/mimoma',
       website: 'https://robdll.github.io/mimoma/',
     },
-    {
-      title: 'TwitchTV',
-      description: 'React application used to showcase how to connect to Twitch API to keep track your favorite Twitch streamers.',
-      cover: 'https://via.placeholder.com/300x200.png',
-      github: 'https://github.com/robdll/FCC_twitchTv',
-      website: 'https://robdll.github.io/FCC_twitchTv',
-    },
+    // {
+    //   title: 'TwitchTV',
+    //   description: 'React application used to showcase how to connect to Twitch API to keep track your favorite Twitch streamers.',
+    //   cover: 'https://via.placeholder.com/300x200.png',
+    //   github: 'https://github.com/robdll/FCC_twitchTv',
+    //   website: 'https://robdll.github.io/FCC_twitchTv',
+    // },
     {
       title: 'Hanoi Recursion',
       description: 'Assembly script to solve in the minimum amount of steps the hanoi tower game. The procedure it\'s a recursion written in Assembly',
-      cover: 'hanoi.png',
+      cover: 'hanoi.webp',
       github: 'https://github.com/robdll/Hanoi',
     },
     {
       title: 'Random quotes',
       description: 'Responsive page providing random quotes fetchED via external API which also allow to tweet them.',
-      cover: 'randomQuoteBg.png',
+      cover: 'randomQuoteBg.webp',
       github: 'https://github.com/robdll/random-quote-machine',
       website: 'https://robdll.github.io/random-quote-machine',
     },
     {
       title: 'Super Mario',
       description: 'Simple tribute page project developed to obtain FreeCodeCamp Certification.',
-      cover: 'marioTribute.png',
+      cover: 'marioTribute.webp',
       github: 'https://github.com/robdll/super-mario-tribute',
       website: 'https://robdll.github.io/super-mario-tribute',
     },
     {
       title: 'Space Invaders',
       description: 'Remake of the 1978 arcade games completely rewrote by using Java. EasterEggs and cheats were added too.',
-      cover: 'spaceInvaders.png',
+      cover: 'spaceInvaders.webp',
       github: 'https://github.com/robdll/spaceInvaders',
     },
     
     {
       title: 'DrJack/MrWhite',
       description: '2d Infinite Runner game created in Unity3d based on colors and shapes. The main character double personality will make your life harder',
-      cover: 'drJack.png',
+      cover: 'drJack.webp',
       github: 'https://github.com/robdll/GlobalGameJam/tree/master/DrJack%26MrWhite',
       youtube: 'https://www.youtube.com/watch?v=em-Id-MdW94'
     },
     {
       title: 'Tango Legacy',
       description: 'Inspired by Zbigniew Rybczyński opera, this 2d isometric game made with Unity3d requires to time music and images to avoid characters collision',
-      cover: 'tango.png',
+      cover: 'tango.webp',
       github: 'https://github.com/robdll/GlobalGameJam/tree/master/TangoLegacy',
       youtube: 'https://www.youtube.com/watch?v=__DneSSMqfo'
     },
     {
       title: 'Obsession',
       description: '2d platform game made with Unity3d whose goal is to adventure in the character mind illeness to fix his paranoid disorder.',
-      cover: 'obsession.png',
+      cover: 'obsession.webp',
       github: 'https://github.com/robdll/GlobalGameJam/tree/master/Obsession',
       youtube: 'https://www.youtube.com/watch?v=x10dBwZFi2Q'
     },
     {
       title: 'Mindgame',
       description: 'Isometric adventure game made with Gamemaker whose goal is to sync with a child branwaves to help him walk through his fears.',
-      cover: 'mindgame.png',
+      cover: 'mindgame.webp',
       github: 'https://youtu.be/pUZIxpSm8Jw',
       youtube: 'https://github.com/robdll/SpicyNerdParty'
     },
     {
       title: 'Weather App',
       description: 'This weather application uses GeoLocation and fetch FreeCodeCamp API to provides real time data about the weather',
-      cover: 'meteo.png',
+      cover: 'meteo.webp',
       github: 'https://github.com/robdll/meteo',
       website: 'https://robdll.github.io/meteo',
       youtube: 'a'
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const cardTitle = document.createElement("h2");
     cardTitle.textContent = card.title;
-    cardTitle.classList.add("title-catout");
+    cardTitle.classList.add("title-cutout");
 
     const flipCardFront = document.createElement("div");
     flipCardFront.classList.add("flip-card-front");
