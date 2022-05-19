@@ -275,7 +275,6 @@ nav {
 }
 
 .service {
-  max-width: 550px;
   z-index: 50;
   text-align: justify;
 }
@@ -433,15 +432,14 @@ nav {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-image: url("https://via.placeholder.com/300x200.png"); /* The image used - important! */
-  background-size: cover;
+  background-size: contain;
   height: 200px; /* Some height */
 }
 
 .title-cutout {
   background-color: #7a2a30;
   color: white;
-  font-size: 3vw;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0 auto;
   padding: 5px;
