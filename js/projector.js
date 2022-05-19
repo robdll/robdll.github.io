@@ -102,8 +102,18 @@ document.addEventListener("DOMContentLoaded", function(){
   // background-image: url("https://via.placeholder.com/300x200.png"); /* The image used - important! */
 
 
-  var portfolioContainer = document.getElementsByClassName('portfolio-container')[0];
 
+  const portfolioContainer = document.createElement("section");
+  portfolioContainer.classList.add("portfolio-container");
+  
+  const titleContainer = document.createElement("div");
+  titleContainer.classList.add("portfolio-title");
+  
+  const title = document.createElement("h2");
+  title.textContent = 'Here you can find some of the projects I\'ve been working on!';
+  titleContainer.appendChild(title);
+  portfolioContainer.appendChild(titleContainer);
+  
   cards.forEach( function(card) {
     const flipCard = document.createElement("div");
     flipCard.classList.add("flip-card");
@@ -164,5 +174,7 @@ document.addEventListener("DOMContentLoaded", function(){
     flipCard.appendChild(flipCardInner);
     portfolioContainer.appendChild(flipCard);
   })
+
+  document.body.appendChild(portfolioContainer);
 
 });
