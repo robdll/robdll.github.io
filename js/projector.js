@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
       description: 'Web Application built in NextJs with a PHP backend allowing users to share links and sells videos via stripe.',
       cover: 'bemyfan.webp',
       website: 'https://bemyfan.com',
-      y: '44px'
+      y: '42px'
     },
     {
       title: 'Elaisian',
@@ -36,9 +36,11 @@ document.addEventListener("DOMContentLoaded", function(){
     {
       title: 'TwitchTV',
       description: 'React application used to showcase how to connect to Twitch API to keep track your favorite Twitch streamers.',
-      cover: 'https://via.placeholder.com/300x200.png',
+      cover: 'twitchtv.webp',
       github: 'https://github.com/robdll/FCC_twitchTv',
       website: 'https://robdll.github.io/FCC_twitchTv',
+      y: '42px',
+      x: '5px'
     },
     {
       title: 'Hanoi Recursion',
@@ -60,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'marioTribute.webp',
       github: 'https://github.com/robdll/super-mario-tribute',
       website: 'https://robdll.github.io/super-mario-tribute',
-      y: '30px',
+      y: '42px',
       x: '-27px',
     },
     {
