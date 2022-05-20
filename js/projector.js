@@ -187,6 +187,7 @@ document.addEventListener("DOMContentLoaded", function(){
       img.loading = 'lazy';
       const link = document.createElement("a");
       link.href = card.website;
+      link.target = '_blank';
       link.appendChild(img);
       cardResources.appendChild(link);
     }
