@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function(){
       title: 'DrumDrum',
       description: 'An easy to play Drum Machine responsive application written in React which also uses keydown events to provide a better user experience',
       cover: 'drumdrum.webp',
-      github: 'https://github.com/robdll/drumdrum',
-      website: 'https://robdll.github.io/drumdrum/',
-      y: '55px',
+      github: 'https://github.com/robdll/DrumDrum',
+      website: 'https://robdll.github.io/DrumDrum',
+      y: '44px',
       x: '0px'
     },
     {
