@@ -43,19 +43,13 @@ document.addEventListener("DOMContentLoaded", function(){
       x: '5px'
     },
     {
-      title: 'TwitchTV',
-      description: 'React application used to showcase how to connect to Twitch API to keep track your favorite Twitch streamers.',
-      cover: 'twitchtv.webp',
-      github: 'https://github.com/robdll/FCC_twitchTv',
-      website: 'https://robdll.github.io/FCC_twitchTv',
-      y: '42px',
-      x: '5px'
-    },
-    {
-      title: 'Hanoi Recursion',
-      description: 'Assembly script to solve in the minimum amount of steps the hanoi tower game. The procedure it\'s a recursion written in Assembly',
-      cover: 'hanoi.webp',
-      github: 'https://github.com/robdll/Hanoi',
+      title: 'DrumDrum',
+      description: 'An easy to play Drum Machine responsive application written in React which also uses keydown events to provide a better user experience',
+      cover: 'drumdrum.webp',
+      github: 'https://github.com/robdll/drumdrum',
+      website: 'https://robdll.github.io/drumdrum/',
+      y: '55px',
+      x: '0px'
     },
     {
       title: 'Random quotes',
@@ -64,6 +58,24 @@ document.addEventListener("DOMContentLoaded", function(){
       github: 'https://github.com/robdll/random-quote-machine',
       website: 'https://robdll.github.io/random-quote-machine',
       y: '-4px',
+    },
+    {
+      title: 'Weather App',
+      description: 'This weather application uses GeoLocation and fetch FreeCodeCamp API to provides real time data about the weather',
+      cover: 'meteo.webp',
+      github: 'https://github.com/robdll/meteo',
+      website: 'https://robdll.github.io/meteo',
+      y: '52px',
+      x: '0px'
+    },
+    {
+      title: 'TwitchTV',
+      description: 'React application used to showcase how to connect to Twitch API to keep track your favorite Twitch streamers.',
+      cover: 'twitchtv.webp',
+      github: 'https://github.com/robdll/FCC_twitchTv',
+      website: 'https://robdll.github.io/FCC_twitchTv',
+      y: '42px',
+      x: '5px'
     },
     {
       title: 'Super Mario',
@@ -75,13 +87,10 @@ document.addEventListener("DOMContentLoaded", function(){
       x: '-27px',
     },
     {
-      title: 'Weather App',
-      description: 'This weather application uses GeoLocation and fetch FreeCodeCamp API to provides real time data about the weather',
-      cover: 'meteo.webp',
-      github: 'https://github.com/robdll/meteo',
-      website: 'https://robdll.github.io/meteo',
-      y: '52px',
-      x: '0px'
+      title: 'Hanoi Recursion',
+      description: 'Assembly script to solve in the minimum amount of steps the hanoi tower game. The procedure it\'s a recursion written in Assembly',
+      cover: 'hanoi.webp',
+      github: 'https://github.com/robdll/Hanoi',
     },
     {
       title: 'Space Invaders',
