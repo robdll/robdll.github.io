@@ -34,6 +34,15 @@ document.addEventListener("DOMContentLoaded", function(){
       x: '5px'
     },
     {
+      title: 'Tomaclock',
+      description: 'A Tomato Clock App written in React with two countdown timers switching between each other when reaching 0',
+      cover: 'tomaclock.webp',
+      github: 'https://github.com/robdll/tomaclock',
+      website: 'https://robdll.github.io/tomaclock/',
+      y: '44px',
+      x: '5px'
+    },
+    {
       title: 'TwitchTV',
       description: 'React application used to showcase how to connect to Twitch API to keep track your favorite Twitch streamers.',
       cover: 'twitchtv.webp',
