@@ -6,14 +6,12 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'meuartelie.webp',
       github: 'https://github.com/robdll/meuartelie',
       website: 'https://meuartelie.com',
-      y: '20px'
     },
     {
       title: 'BeMyFan',
       description: 'Web Application built in NextJs with a PHP backend allowing users to share links and sells videos via stripe.',
       cover: 'bemyfan.webp',
       website: 'https://bemyfan.com',
-      y: '42px'
     },
     {
       title: 'Elaisian',
@@ -21,8 +19,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'elaisian.webp',
       website: 'https://elaisian.com',
       youtube: 'https://www.youtube.com/c/Elaisian',
-      y: '44px',
-      x: '2px'
     },
     {
       title: 'Movie Manager',
@@ -30,8 +26,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'movieManager.webp',
       github: 'https://github.com/robdll/mimoma',
       website: 'https://robdll.github.io/mimoma/',
-      y: '44px',
-      x: '5px'
     },
     {
       title: 'Tomaclock',
@@ -39,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'tomaclock.webp',
       github: 'https://github.com/robdll/tomaclock',
       website: 'https://robdll.github.io/tomaclock/',
-      y: '44px',
-      x: '5px'
     },
     {
       title: 'DrumDrum',
@@ -48,8 +40,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'drumdrum.webp',
       github: 'https://github.com/robdll/DrumDrum',
       website: 'https://robdll.github.io/DrumDrum',
-      y: '44px',
-      x: '0px'
     },
     {
       title: 'Markdown Preview',
@@ -57,8 +47,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'previewer.webp',
       github: 'https://github.com/robdll/MarkdownPreviewer',
       website: 'https://robdll.github.io/MarkdownPreviewer',
-      y: '44px',
-      x: '0px'
     },
     {
       title: 'Random quotes',
@@ -66,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'randomQuoteBg.webp',
       github: 'https://github.com/robdll/random-quote-machine',
       website: 'https://robdll.github.io/random-quote-machine',
-      y: '-4px',
     },
     {
       title: 'Weather App',
@@ -74,8 +61,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'meteo.webp',
       github: 'https://github.com/robdll/meteo',
       website: 'https://robdll.github.io/meteo',
-      y: '52px',
-      x: '0px'
     },
     {
       title: 'TwitchTV',
@@ -83,8 +68,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'twitchtv.webp',
       github: 'https://github.com/robdll/FCC_twitchTv',
       website: 'https://robdll.github.io/FCC_twitchTv',
-      y: '42px',
-      x: '5px'
     },
     {
       title: 'Super Mario',
@@ -92,8 +75,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'marioTribute.webp',
       github: 'https://github.com/robdll/super-mario-tribute',
       website: 'https://robdll.github.io/super-mario-tribute',
-      y: '42px',
-      x: '-27px',
     },
     {
       title: 'Hanoi Recursion',
@@ -106,8 +87,6 @@ document.addEventListener("DOMContentLoaded", function(){
       description: 'Remake of the 1978 arcade games completely rewrote by using Java. EasterEggs and cheats were added too.',
       cover: 'spaceInvaders.webp',
       github: 'https://github.com/robdll/spaceInvaders',
-      y: '47px',
-      x: '21px',
     },
     {
       title: 'DrJack/MrWhite',
@@ -115,8 +94,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'drJack.webp',
       github: 'https://github.com/robdll/GlobalGameJam/tree/master/DrJack%26MrWhite',
       youtube: 'https://www.youtube.com/watch?v=em-Id-MdW94',
-      y: '42px',
-      x: '5px',
     },
     {
       title: 'Tango Legacy',
@@ -124,8 +101,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'tango.webp',
       github: 'https://github.com/robdll/GlobalGameJam/tree/master/TangoLegacy',
       youtube: 'https://www.youtube.com/watch?v=__DneSSMqfo',
-      y: '45px',
-      x: '15px',
     },
     {
       title: 'Obsession',
@@ -133,8 +108,6 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'obsession.webp',
       github: 'https://github.com/robdll/GlobalGameJam/tree/master/Obsession',
       youtube: 'https://www.youtube.com/watch?v=x10dBwZFi2Q',
-      y: '45px',
-      x: '15px'
     },
     {
       title: 'Mindgame',
@@ -142,25 +115,13 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'mindgame.webp',
       github: 'https://github.com/robdll/SpicyNerdParty',
       youtube: 'https://youtu.be/pUZIxpSm8Jw',
-      y: '35px',
-      x: '3px'
     }
   ];
 
-  // background-image: url("https://via.placeholder.com/300x200.png"); /* The image used - important! */
-
-
-
-  const portfolioContainer = document.createElement("section");
-  portfolioContainer.classList.add("portfolio-container");
-  
-  const titleContainer = document.createElement("div");
-  titleContainer.classList.add("portfolio-title");
-  
-  const title = document.createElement("h2");
-  title.textContent = 'Here you can find some of the projects I\'ve been working on!';
-  titleContainer.appendChild(title);
-  portfolioContainer.appendChild(titleContainer);
+  const containers = document.getElementsByTagName("section");
+  console.log(containers)
+  const portfolioContainer = containers[0];
+  console.log(portfolioContainer)
   
   cards.forEach( function(card) {
     const flipCard = document.createElement("div");
@@ -176,14 +137,6 @@ document.addEventListener("DOMContentLoaded", function(){
     flipCardFront.classList.add("flip-card-front");
     flipCardFront.appendChild(cardTitle);
     flipCardFront.style.backgroundImage = "url('../resources/" + card.cover + "')";
-
-    if(card.y) {
-      flipCardFront.style.backgroundPositionY = card.y;
-    }
-
-    if(card.x) {
-      flipCardFront.style.backgroundPositionX = card.x;
-    }
 
     const cardResources = document.createElement("div");
     cardResources.classList.add("card-resources");

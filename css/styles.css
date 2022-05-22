@@ -401,6 +401,15 @@ nav {
   margin: 45px auto;
 }
 
+.portfolio-title h2 {
+  font-size: 2rem;
+  margin: 10px auto;
+}
+
+.portfolio-title h3 {
+  font-size: 1.2rem;
+}
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -435,6 +444,7 @@ nav {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  background-position: bottom center;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -600,5 +610,9 @@ nav {
   .nav--link-container li {
     margin-right: 5px;
   }
-  
+
+  .portfolio-title {
+    margin-bottom: 20px;
+  }
+
 }
