@@ -63,6 +63,13 @@ document.addEventListener("DOMContentLoaded", function(){
       website: 'https://robdll.github.io/meteo',
     },
     {
+      title: 'Minesweeper',
+      description: 'Simple javascript, html, css of the famous mineweeper game featuring 3 difficulties',
+      cover: 'minesweeper.webp',
+      github: 'https://github.com/robdll/minesweeper',
+      website: 'https://robdll.github.io/minesweeper',
+    },
+    {
       title: 'TwitchTV',
       description: 'React application used to showcase how to connect to Twitch API to keep track your favorite Twitch streamers.',
       cover: 'twitchtv.webp',
