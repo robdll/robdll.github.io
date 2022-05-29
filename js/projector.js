@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function(){
       youtube: 'https://www.youtube.com/c/Elaisian',
     },
     {
-      title: 'Movie Manager',
-      description: 'Movie Manager React showcase using redux thunk and themoviedb API to fetch movies and adds them to your favorites list. ',
-      cover: 'movieManager.webp',
-      github: 'https://github.com/robdll/mimoma',
-      website: 'https://robdll.github.io/mimoma/',
+      title: 'Awesome movie',
+      description: 'Movie Manager App created with React, Redux and Redux Thunk. It makes use of themoviedb API to fetch movies and features favorites and watchlater lists.',
+      cover: 'awemovie.webp',
+      github: 'https://github.com/robdll/awesome-movies',
+      website: 'https://robdll.github.io/awesome-movies/',
     },
     {
       title: 'Tomaclock',
@@ -54,6 +54,13 @@ document.addEventListener("DOMContentLoaded", function(){
       cover: 'randomQuoteBg.webp',
       github: 'https://github.com/robdll/random-quote-machine',
       website: 'https://robdll.github.io/random-quote-machine',
+    },
+    {
+      title: 'Movie Manager',
+      description: 'Movie Manager React showcase using redux thunk and themoviedb API to fetch movies and adds them to your favorites list. ',
+      cover: 'movieManager.webp',
+      github: 'https://github.com/robdll/mimoma',
+      website: 'https://robdll.github.io/mimoma/',
     },
     {
       title: 'Weather App',
