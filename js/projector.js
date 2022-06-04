@@ -49,6 +49,13 @@ document.addEventListener("DOMContentLoaded", function(){
       website: 'https://robdll.github.io/MarkdownPreviewer',
     },
     {
+      title: 'Neobrutalism',
+      description: 'Neobrutalism Design custom component Snackbar written in Angular using framework animation',
+      cover: 'neobrutal.webp',
+      github: 'https://github.com/robdll/neobrutal-snackbar',
+      website: 'https://robdll.github.io/neobrutal-snackbar',
+    },
+    {
       title: 'Random quotes',
       description: 'Responsive page providing random quotes fetchED via external API which also allow to tweet them.',
       cover: 'randomQuoteBg.webp',
