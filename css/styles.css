@@ -394,13 +394,49 @@ nav {
   display: inline;
 }
 
-.contacts ul li a{
+.contacts ul li a {
   display: inline;
   color: white;
   margin-left: 10px;
-  text-decoration: underline;
   cursor: pointer;
   font-weight: 700;
+}
+
+a#email:hover,
+a#github:hover,
+a#linkedin:hover,
+a#stackoverflow:hover,
+a#resume:hover {
+  -webkit-text-fill-color: transparent;
+}
+
+a#email:hover {
+  background: linear-gradient(rgb(234, 67, 53) 0%, rgb(255, 255, 255) 100%);
+}
+
+a#github:hover {
+  background: linear-gradient(rgb(66, 64, 64) 0%, rgb(255, 255, 255) 100%);
+}
+
+a#linkedin:hover {
+  background: linear-gradient(rgb(14, 118, 168) 20%, rgb(255, 255, 255) 100%);
+}
+
+a#stackoverflow:hover {
+  background: linear-gradient(rgb(244, 130, 37) 20%, rgb(255, 255, 255) 100%);
+}
+
+a#resume:hover {
+  background: linear-gradient(rgb(241, 189, 189) 40%, rgb(255, 255, 255) 100%);
+}
+
+a#email:hover,
+a#github:hover,
+a#linkedin:hover,
+a#stackoverflow:hover,
+a#resume:hover {
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .portfolio-title {
