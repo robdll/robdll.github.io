@@ -458,7 +458,7 @@ a#resume:hover {
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 245px;
+  height: 215px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 15px;
 }
