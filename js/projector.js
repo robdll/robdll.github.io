@@ -40,6 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
       website: "https://robdll.github.io/tomaclock/",
     },
     {
+      title: "ShortUrl",
+      description:
+        "Microservice node API featuring NextJs and mongoDB to shorten long url's",
+      cover: "shorturl.webp",
+      github: "https://github.com/robdll/short-url",
+      website: "https://short-url-six-sigma.vercel.app/",
+    },
+    {
       title: "DrumDrum",
       description:
         "An easy to play Drum Machine responsive application written in React which also uses keydown events to provide a better user experience",
@@ -56,12 +64,28 @@ document.addEventListener("DOMContentLoaded", function () {
       website: "https://robdll.github.io/MarkdownPreviewer",
     },
     {
+      title: "MetaFile",
+      description:
+        "File metadata parser microservice featuring NextJs and nodeJs",
+      cover: "metafile.webp",
+      github: "https://github.com/robdll/file-metadata-microservice",
+      website: "https://robdll.github.io/tomaclock/",
+    },
+    {
       title: "Neobrutalism",
       description:
         "Neobrutalism Design custom component Snackbar written in Angular using framework animation",
       cover: "neobrutal.webp",
       github: "https://github.com/robdll/neobrutal-snackbar",
       website: "https://robdll.github.io/neobrutal-snackbar",
+    },
+    {
+      title: "Timestamp Microservice",
+      description:
+        "Microservice API to convert timestamp and dates to human readable format",
+      cover: "timestampMicro.webp",
+      github: "https://github.com/robdll/timestamp-microservice",
+      website: "https://timestamp-microservice-three.vercel.app/",
     },
     {
       title: "Random quotes",
