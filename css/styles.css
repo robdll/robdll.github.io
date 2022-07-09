@@ -68,6 +68,14 @@ nav {
   z-index: 1;
 }
 
+.nav--link.current {
+  font-weight: 700;
+}
+
+.nav--link.current:hover {
+  color: white;
+}
+
 .nav--link,
 .nav--link:after,
 .nav--link:before {

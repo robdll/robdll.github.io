@@ -9,6 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
       website: "https://meuartelie.com",
     },
     {
+      title: "Bitphoenix",
+      description:
+        "Bitcoin Orderbook, Ticker and Trade history written in Reactjs Featuring SCSS modules and Websocket",
+      cover: "bitphoenix.webp",
+      github: "https://github.com/robdll/bitphoenix",
+      website: "https://robertodilillo.dev/bitphoenix",
+    },
+    {
       title: "BeMyFan",
       description:
         "Web Application built in NextJs with a PHP backend allowing users to share links and sells videos via stripe.",
