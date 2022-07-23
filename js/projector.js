@@ -17,6 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
       website: "https://robertodilillo.dev/bitphoenix",
     },
     {
+      title: "CourseShop",
+      description:
+        "Neobrutalistic design courshop platform Poc created in nextJs using CSS modules. Designed by AkintanIteoluwa",
+      cover: "courseshop.webp",
+      github: "https://github.com/robdll/neobrutalist-courseshop",
+      website: "https://neobrutalist-courseshop.vercel.app/",
+    },
+    {
       title: "BeMyFan",
       description:
         "Web Application built in NextJs with a PHP backend allowing users to share links and sells videos via stripe.",

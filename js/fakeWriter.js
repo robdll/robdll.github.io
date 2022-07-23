@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       let professionDeleted = !whoAmI.innerHTML.length;
       if (professionDeleted) {
-        professionIdx = professionIdx === 4 ? 1 : professionIdx + 1;
+        professionIdx = professionIdx === 6 ? 0 : professionIdx + 1;
         clearInterval(deleter);
         addProfession();
       }
