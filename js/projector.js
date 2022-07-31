@@ -25,6 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
       website: "https://neobrutalist-courseshop.vercel.app/",
     },
     {
+      title: "Face Auth",
+      description:
+        "Facial Recognition Authentication built in NextJs with allowing signup and signin without using password.",
+      cover: "facerecognition.webp",
+      github: "https://github.com/robdll/face-recognition-auth",
+      website: "https://face-recognition-auth.vercel.app/",
+    },
+    {
       title: "BeMyFan",
       description:
         "Web Application built in NextJs with a PHP backend allowing users to share links and sells videos via stripe.",
