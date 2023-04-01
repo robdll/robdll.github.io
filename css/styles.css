@@ -750,6 +750,7 @@ a#resume:hover {
     padding-bottom: 0;
     opacity: 1;
     transition: none;
+    margin-left: auto;
   }
 
 }
