@@ -151,11 +151,29 @@ nav {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   padding: 3%;
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 3px 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  background: none;
+  border: 1px solid;
+}
+
+.filter-btn.active {
+  background: #222;
+  color: white;
 }
 
 .section-container:nth-of-type(odd) {
