@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  document.getElementById("hamburger").addEventListener("click", function() {
+    this.classList.toggle("open");
+  });
+
+  
   var professions = [
     "Code mentor?",
     "Frontend developer?",
@@ -48,3 +54,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 60);
   }
 });
+
