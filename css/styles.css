@@ -49,16 +49,34 @@ nav {
 }
 
 .nav--logo {
+  z-index: 1;
   height: 60px;
   width: 60px;
   filter: drop-shadow(0 0 0.25rem 23262B);
 }
 
 .nav--link-container {
-  display: flex;
-  flex-direction: row;
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: -40%;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  font-size: 36px;
+  align-items: center;
+  background: #f4dada;
+  transition: top 0.7s ease-in-out, opacity 0.7s ease-in-out;
+  padding: 15px 0;
+  opacity: 0;
 }
+
+.nav--link-container.open {
+  opacity: 1;
+  top: 0;
+}
+
 
 .nav--link {
   text-decoration: none;
@@ -722,4 +740,16 @@ a#resume:hover {
   #hamburger {
     display: none;
   }
+  .nav--link-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: calc(80% + 0.8vmin);
+    background: none;
+    padding-bottom: 0;
+    opacity: 1;
+    transition: none;
+  }
+
 }
