@@ -217,13 +217,13 @@ document.addEventListener("DOMContentLoaded", function () {
     flipCardFront.classList.add("flip-card-front");
     flipCardFront.appendChild(cardTitle);
     flipCardFront.style.backgroundImage =
-      "url('../resources/" + card.cover + "')";
+      "url('resources/" + card.cover + "')";
 
     const cardResources = document.createElement("div");
     cardResources.classList.add("card-resources");
     if (card.github) {
       const img = document.createElement("img");
-      img.src = "../resources/github.svg";
+      img.src = "resources/github.svg";
       img.alt = "github logo";
       img.loading = "lazy";
       const link = document.createElement("a");
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (card.youtube) {
       const img = document.createElement("img");
-      img.src = "../resources/youtube.svg";
+      img.src = "resources/youtube.svg";
       img.alt = "youtube logo";
       img.loading = "lazy";
       const link = document.createElement("a");
@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (card.website) {
       const img = document.createElement("img");
-      img.src = "../resources/website.svg";
+      img.src = "resources/website.svg";
       img.alt = "website logo";
       img.loading = "lazy";
       const link = document.createElement("a");
