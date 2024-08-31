@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Bitcoin Orderbook, Ticker and Trade history written in Reactjs Featuring SCSS modules and Websocket",
       cover: "bitphoenix.webp",
       github: "https://github.com/robdll/bitphoenix",
-      website: "https://robertodilillo.dev/bitphoenix",
+      website: "https://robdll.com/bitphoenix",
     },
     {
       tags: ["Frontend"],

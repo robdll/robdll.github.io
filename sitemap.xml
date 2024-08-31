@@ -5,22 +5,22 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://robertodilillo.dev/</loc>
+  <loc>https://robdll.com/</loc>
   <lastmod>2022-05-19T14:07:09+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://robertodilillo.dev/html/portfolio.html</loc>
+  <loc>https://robdll.com/html/portfolio.html</loc>
   <lastmod>2022-05-19T14:07:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://robertodilillo.dev/resources/RobResume.pdf</loc>
+  <loc>https://robdll.com/resources/RobResume.pdf</loc>
   <lastmod>2022-05-19T14:07:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://robertodilillo.dev/index.html</loc>
+  <loc>https://robdll.com/index.html</loc>
   <lastmod>2022-05-19T14:07:09+00:00</lastmod>
   <priority>0.64</priority>
 </url>
