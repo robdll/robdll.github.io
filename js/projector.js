@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   var cards = [
     {
+      tags: ["Frontend", "Backend", "AI"],
+      title: "Sentiment Analysis",
+      description:
+        "Sentiment Analysis Web Application created in NextJs using HuggingFace to predict the sentiment of a given text",
+      cover: "sentiment.webp",
+      github: "https://github.com/robdll/SentimentAnalysisForm",
+      website: "https://sentiment-analysis-form.vercel.app/",
+    },
+    {
       tags: ["Frontend", "Backend"],
       title: "Meu Artelie",
       description:
