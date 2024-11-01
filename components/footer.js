@@ -1,4 +1,4 @@
-document.getElementById("footer-container").innerHTML = `
+document.getElementById("contacts").innerHTML = `
   <div class="contacts">
     <p>
       Dont'be a stranger. 
