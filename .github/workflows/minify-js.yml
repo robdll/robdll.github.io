@@ -1,0 +1,38 @@
+name: Minify JavaScript
+
+on:
+  push:
+    branches:
+      - main  # or the branch you want to trigger this on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Or whichever version you're using
+
+      - name: Install terser
+        run: npm install terser -g
+
+      - name: Minify JavaScript
+        run: |
+          for file in js/*.js; do
+            terser "$file" -o "js/$(basename "$file" .js).min.js" -c -m
+          done
+
+      - name: Commit and push minified files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add js/*.min.js
+          git commit -m "Auto-minify JavaScript files"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
