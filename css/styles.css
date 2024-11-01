@@ -153,10 +153,10 @@ nav {
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   padding: 3%;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 #projects-container {

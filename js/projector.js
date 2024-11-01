@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var cards = [
     {
-      tags: ["Frontend", "Backend", "AI"],
+      tags: ["Frontend", "Backend", "AI/ML"],
       title: "Sentiment Analysis",
       description:
         "Sentiment Analysis Web Application created in NextJs using HuggingFace to predict the sentiment of a given text",
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       website: "https://bemyfan.com",
     },
     {
-      tags: ["Frontend", "Backend"],
+      tags: ["Frontend", "Backend", "AI/ML"],
       title: "Elaisian",
       description:
         "Web Application created in Angular 4 with a REST API in Node Express hosted on AWS. Architecture also includes Lambdas, RDS, and Docker.",
