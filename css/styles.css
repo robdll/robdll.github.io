@@ -541,9 +541,9 @@ a#resume:hover {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-size: contain;
-  background-position: bottom;
-  height: 100%; /* Some height */
+  background-size: cover;
+  height: 100%;
+  background-position-y: 45px;
 }
 
 .title-cutout {
