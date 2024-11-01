@@ -149,12 +149,14 @@ nav {
   background-image: linear-gradient(#f4dada, white);
   z-index: 99;
   display: flex;
+  gap: 30px;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   padding: 3%;
+  padding-top: 50px;
 }
 
 #projects-container {
