@@ -579,22 +579,36 @@ a#resume:hover {
 .card-resources {
   display: flex;
   flex-direction: row;
-  padding: 5px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 10px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  gap: 5px;
 }
 
 .card-resources > * {
-  display: inline;
-  margin-right: 10px;
   cursor: pointer;
+  background-color: rgba(255,255,255,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-resources a {
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-resources a, .card-resources a img {
+  width: 40px;
+  height: 40px;
 }
 
 .card-resources a img {
-  width: 40px;
-  size: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 /* HAMBURGER MENU */
