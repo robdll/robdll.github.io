@@ -278,7 +278,6 @@ nav {
   letter-spacing: 0.2rem;
   font-size: 1.6vw;
   color: white;
-  margin-top: 25px;
   line-height: 1.5;
   width: 80%;
   background-color: #23262b;
@@ -422,28 +421,27 @@ nav {
   width: 100%;
 }
 
-.contacts ul {
+.contacts .contact-grid {
   width: 100%;
   font-size: 1.6rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(auto, 150px) auto;
+  margin: 30px 0 0 15px;
 }
 
-.contacts ul li {
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-.contacts ul li span {
+.contacts .contact-grid span {
   color: white;
-  text-indent: 30px;
-  display: inline;
+  font-size: 1.2rem;
+  align-self: center;
 }
 
-.contacts ul li a {
+.contacts .contact-grid a {
   display: inline;
   color: white;
-  margin-left: 10px;
   cursor: pointer;
   font-weight: 700;
+  font-size: 1.8rem;
 }
 
 a#email:hover,
@@ -728,10 +726,7 @@ a#resume:hover {
     padding: 75px 0;
     height: auto;
   }
-  .contacts p {
-    font-size: 1.3rem;
-  }
-  .contacts ul {
+  .contacts .grid {
     font-size: 1.4rem;
     margin-top: 30px;
   }
@@ -771,6 +766,18 @@ a#resume:hover {
     margin-left: auto;
   }
 
+}
+
+@media only screen and (max-width: 478px) {
+  .contacts p {
+    font-size: 1.6rem;
+  }
+  .contacts .contact-grid a {
+    font-size: 1.6rem;
+  }
+  .contacts .contact-grid span {
+    font-size: 1rem;
+  }
 }
 
 .modal {
