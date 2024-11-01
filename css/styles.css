@@ -816,8 +816,9 @@ a#resume:hover {
   overflow: auto;
   background-color: rgba(0,0,0,1);
   justify-content: flex-start; /* Align content to top left */
-  align-items: flex-start; /* Align content to top left */
+  align-items: center; /* Align content to top left */
   animation: animateModal 0.5s;
+  
 }
 
 .modal img {

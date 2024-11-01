@@ -1,22 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const gifSrc = './resources/RobLogoAnimation.gif';
+  const videoSrc = './resources/RobLogoAnimation.webm';
   const modal = document.getElementById("gifModal");
-  const gif = document.getElementById("animatedGif");
+  const video = document.getElementById("animatedGif"); // This now targets the video element
   const logo = document.querySelector(".nav--logo");
   let modalCloseTimeoutId = null;
+  
   // Open the modal on page load
   openModal();
 
   // Close the modal with reverse animation
   function closeModal(isClick) {
     if (modalCloseTimeoutId !== null) {
-      clearTimeout(modalCloseTimeoutId); // Clear the timeout
-      modalCloseTimeoutId = null; // Reset the timeout ID
+      clearTimeout(modalCloseTimeoutId);
+      modalCloseTimeoutId = null;
     }
     modal.style.animation = "animateModalReverse 0.5s forwards";
     setTimeout(() => {
         modal.style.display = "none";
-    }, 500); // This should match the reverse animation duration
+        video.pause(); 
+      }, 500);
   }
 
   // Function to reopen the modal from the logo
@@ -25,19 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
     modal.style.display = "flex";
     void modal.offsetWidth;
     modal.style.animation = "animateModal 0.5s forwards";
-    gif.offsetWidth; // Force browser reflow/repaint
-    gif.setAttribute('src', gifSrc); // Reset the src to its original
-    gif.style.display = "block"; // Show the GIF if it was hidden
-    gif.classList.remove("minimized-gif"); // Remove minimized class if applied
-    gif.removeEventListener('click', closeAndStopPropagation); // Remove any existing listener to avoid duplicates
-    gif.addEventListener('click', closeAndStopPropagation); // Attach a new listener
+    video.setAttribute('src', videoSrc);
+    video.style.display = "block";
+    video.play();
+    video.classList.remove("minimized-gif");
+    video.removeEventListener('click', closeAndStopPropagation);
+    video.addEventListener('click', closeAndStopPropagation);
     // Close the modal after full animation
     modalCloseTimeoutId = setTimeout(() => {
       closeModal();
     }, 8000); // Delay to allow display to update
   }
 
-     // Event listener to close modal when clicking anywhere on it
   modal.addEventListener('click', function(event) {
     closeModal();
   });
@@ -49,5 +50,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Reopen modal if logo is clicked
   logo.addEventListener('click', openModal);
-  
 });

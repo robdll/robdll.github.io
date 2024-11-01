@@ -18,8 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="js/navbar.min.js"></script>
     <script src="js/fakeWriter.js"></script>
-    <script src="js/logoHandler.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="js/logoHandler.js"></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-NL472XCWD0"
@@ -177,7 +176,10 @@
     <section class="section-container" id="contacts"></section>
 
     <div id="gifModal" class="modal">
-      <img id="animatedGif" alt="Animated GIF">
+      <video id="animatedGif" autoplay loop muted playsinline>
+        <source src="resources/RobLogoAnimation.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </body>
 </html>
