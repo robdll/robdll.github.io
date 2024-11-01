@@ -517,6 +517,7 @@ a#resume:hover {
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   box-shadow: -7px 7px 10px 0px #9e7d7d;
+  border-radius: 10px;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -535,6 +536,7 @@ a#resume:hover {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   background-position: bottom center;
+  border-radius: 10px;
 }
 
 /* Style the front side (fallback if image is missing) */
