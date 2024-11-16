@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Or your preferred version
+          node-version: '16'  # Or your preferred version
 
       - name: Install clean-css-cli
         run: npm install clean-css-cli -g
