@@ -3,7 +3,7 @@ name: Minify JavaScript
 on:
   push:
     branches:
-      - master
+      - master  # Replace with your branch name
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Or whichever version you're using
+          node-version: '14'  # Or your preferred version
 
       - name: Install terser
         run: npm install terser -g
@@ -24,7 +24,10 @@ jobs:
       - name: Minify JavaScript
         run: |
           for file in js/*.js; do
-            terser "$file" -o "js/$(basename "$file" .js).min.js" -c -m
+            # Skip already minified files
+            if [[ "$file" != *.min.js ]]; then
+              terser "$file" -o "js/$(basename "$file" .js).min.js" -c -m
+            fi
           done
 
       - name: Commit and push minified files
