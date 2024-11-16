@@ -159,6 +159,14 @@ nav {
   padding-top: 70px;
 }
 
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
 #projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -212,7 +220,7 @@ nav {
   align-self: flex-end;
   font-size: 3.5rem;
   font-weight: 700;
-  color: #7a2a30;
+  color: #74a8ff;
 }
 
 .hero--subtitle {
@@ -235,7 +243,7 @@ nav {
   align-items: stretch;
   cursor: pointer;
   justify-self: center;
-  border: 3px solid #7a2a30;
+  border: 3px solid #74a8ff;
   font-size: 1.5rem;
 }
 
@@ -400,7 +408,7 @@ nav {
   color: #23262b;
   font-size: 3vw;
   display: inline;
-  border: 3px solid #7a2a30;
+  border: 3px solid #74a8ff;
   text-align: right;
   margin-top: 25px;
   position: absolute;
@@ -562,7 +570,7 @@ a#resume:hover {
 }
 
 .title-cutout {
-  background-color: #7a2a30;
+  background-color: #74a8ff;
   color: white;
   font-size: 1rem;
   font-weight: 700;
@@ -575,11 +583,12 @@ a#resume:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #fff;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #7a2a30;
+  background-color: #74a8ff;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
@@ -589,8 +598,10 @@ a#resume:hover {
   padding: 10px;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 2;
   color: white;
+  padding: 15px 20px 0 20px;
+  letter-spacing: 1px;
 }
 
 .card-resources {
