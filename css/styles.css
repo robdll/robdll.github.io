@@ -380,6 +380,21 @@ nav {
   animation: bigUpDown 2.5s alternate infinite ease-in-out;
 }
 
+
+.icon-1.icon-left img {
+  animation: smallUpDown 2s alternate-reverse infinite ease-in-out;
+}
+
+
+.icon-2.icon-left img {
+  animation: upDown 2.5s alternate infinite ease-out;
+}
+
+
+.icon-3.icon-left img {
+  animation: bigUpDown 1s alternate infinite ease-in;
+}
+
 .service--cta {
   cursor: pointer;
   color: #23262b;
