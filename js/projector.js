@@ -29,6 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       tags: ["Frontend"],
+      title: "Particles",
+      description:
+        "Interactive particle animation that dynamically visualizes text on a canvas. Users can customize text input, while particles respond to mouse or touch interactions",
+      cover: "particles.mp4",
+      github: "https://github.com/robdll/particles",
+      website: "https://robdll.github.io/particles",
+    },
+    {
+      tags: ["Frontend"],
       title: "CourseShop",
       description:
         "Neobrutalistic design courshop platform Poc created in nextJs using CSS modules. Designed by AkintanIteoluwa",
@@ -300,8 +309,21 @@ document.addEventListener("DOMContentLoaded", function () {
       const flipCardFront = document.createElement("div");
       flipCardFront.classList.add("flip-card-front");
       flipCardFront.appendChild(cardTitle);
-      flipCardFront.style.backgroundImage =
-        "url('resources/" + card.cover + "')";
+
+      // Check if the cover is a video or an image
+      if (card.cover.endsWith('.mp4')) {
+        const video = document.createElement("video");
+        video.src = "resources/" + card.cover;
+        video.autoplay = true;
+        video.muted = true;
+        video.loop = true;
+        video.classList.add("card-video");
+        flipCardFront.appendChild(video);
+      } else {
+        flipCardFront.style.backgroundImage =
+          "url('resources/" + card.cover + "')";
+      }
+
       const cardResources = document.createElement("div");
       cardResources.classList.add("card-resources");
       ['github', 'youtube', 'website'].forEach((resource) => {
@@ -314,21 +336,22 @@ document.addEventListener("DOMContentLoaded", function () {
           link.href = card[resource];
           link.appendChild(img);
           cardResources.appendChild(link);
-          if(resource === 'website') {
+          if (resource === 'website') {
             link.target = "_blank";
           }
         }
-        const description = document.createElement("p");
-        description.textContent = card.description;
-        const flipCardBack = document.createElement("div");
-        flipCardBack.classList.add("flip-card-back");
-        flipCardBack.appendChild(description);
-        flipCardBack.appendChild(cardResources);
-        flipCardInner.appendChild(flipCardFront);
-        flipCardInner.appendChild(flipCardBack);
-        flipCard.appendChild(flipCardInner);
-        projectsContainer.appendChild(flipCard);
       });
+
+      const description = document.createElement("p");
+      description.textContent = card.description;
+      const flipCardBack = document.createElement("div");
+      flipCardBack.classList.add("flip-card-back");
+      flipCardBack.appendChild(description);
+      flipCardBack.appendChild(cardResources);
+      flipCardInner.appendChild(flipCardFront);
+      flipCardInner.appendChild(flipCardBack);
+      flipCard.appendChild(flipCardInner);
+      projectsContainer.appendChild(flipCard);
     });
   }
 });
