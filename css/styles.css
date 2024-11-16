@@ -586,6 +586,12 @@ a#resume:hover {
   border-bottom: 1px solid #fff;
 }
 
+/* workaround to blackened video empty space */
+.card-video {
+  padding: 40px 0; 
+  background-color: black;
+}
+
 /* Style the back side */
 .flip-card-back {
   background-color: #74a8ff;

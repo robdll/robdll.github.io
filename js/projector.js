@@ -28,6 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
       website: "https://robdll.com/bitphoenix",
     },
     {
+      tags: ["Frontend", "Backend", "AI/ML"],
+      title: "Image Classifier",
+      description:
+        "A web-based Image Classifier built with Next.js and Material-UI, leveraging TensorFlow.js and MobileNet for real-time image classification. Features Materials UI.",
+      cover: "image-classifier.webp",
+      github: "https://github.com/robdll/image-classifier",
+      website: "https://image-classifier-olive.vercel.app/",
+    },
+    {
       tags: ["Frontend"],
       title: "Particles",
       description:
