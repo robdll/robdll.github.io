@@ -1,0 +1,41 @@
+name: Minify CSS
+
+on:
+  push:
+    branches:
+      - master  # Replace with your branch name
+
+jobs:
+  minify-css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Or your preferred version
+
+      - name: Install clean-css-cli
+        run: npm install clean-css-cli -g
+
+      - name: Minify CSS
+        run: |
+          for file in css/*.css; do
+            # Skip already minified files
+            if [[ "$file" != *.min.css ]]; then
+              cleancss -o "css/$(basename "$file" .css).min.css" "$file"
+            fi
+          done
+
+      - name: Commit and push minified CSS files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add css/*.min.css
+          git commit -m "Auto-minify CSS files"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
