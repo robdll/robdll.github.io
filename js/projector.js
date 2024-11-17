@@ -1,40 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   var cards = [
     {
-      tags: ["Frontend", "Backend", "AI/ML"],
-      title: "Sentiment Analysis",
-      description:
-        "Sentiment Analysis Web Application created in NextJs using HuggingFace to predict the sentiment of a given text",
-      cover: "sentiment.webp",
-      github: "https://github.com/robdll/SentimentAnalysisForm",
-      website: "https://sentiment-analysis-form.vercel.app/",
-    },
-    {
-      tags: ["Frontend", "Backend"],
+      tags: ["Frontend"],
       title: "Meu Artelie",
       description:
         "Mandala Artist Porfolio. Concept created in Adobe XD, frontend implemented using NextJs using CSS modules.",
       cover: "meuartelie.webp",
       github: "https://github.com/robdll/meuartelie",
       website: "https://meuartelie.com",
-    },
-    {
-      tags: ["Frontend", "Backend"],
-      title: "Bitphoenix",
-      description:
-        "Bitcoin Orderbook, Ticker and Trade history written in Reactjs Featuring SCSS modules and Websocket",
-      cover: "bitphoenix.webp",
-      github: "https://github.com/robdll/bitphoenix",
-      website: "https://robdll.com/bitphoenix",
-    },
-    {
-      tags: ["Frontend", "Backend", "AI/ML"],
-      title: "Image Classifier",
-      description:
-        "A web-based Image Classifier built with Next.js and Material-UI, leveraging TensorFlow.js and MobileNet for real-time image classification. Features Materials UI.",
-      cover: "image-classifier.webp",
-      github: "https://github.com/robdll/image-classifier",
-      website: "https://image-classifier-olive.vercel.app/",
     },
     {
       tags: ["Frontend"],
@@ -46,6 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
       website: "https://robdll.github.io/particles",
     },
     {
+      tags: ["Frontend", "Backend"],
+      title: "Bitphoenix",
+      description:
+        "Bitcoin Orderbook, Ticker and Trade history written in Reactjs Featuring SCSS modules and Websocket",
+      cover: "bitphoenix.webp",
+      github: "https://github.com/robdll/bitphoenix",
+      website: "https://robdll.com/bitphoenix",
+    },
+    {
       tags: ["Frontend"],
       title: "CourseShop",
       description:
@@ -53,6 +35,24 @@ document.addEventListener("DOMContentLoaded", function () {
       cover: "courseshop.webp",
       github: "https://github.com/robdll/neobrutalist-courseshop",
       website: "https://neobrutalist-courseshop.vercel.app/",
+    },
+    {
+      tags: ["Frontend", "Backend", "AI/ML"],
+      title: "Sentiment Analysis",
+      description:
+        "Sentiment Analysis Web Application created in NextJs using HuggingFace to predict the sentiment of a given text",
+      cover: "sentiment.webp",
+      github: "https://github.com/robdll/SentimentAnalysisForm",
+      website: "https://sentiment-analysis-form.vercel.app/",
+    },
+    {
+      tags: ["Frontend", "Backend", "AI/ML"],
+      title: "Emotion Detector",
+      description:
+        "A web-based emotion recognition app using face-api.js and TensorFlow.js, leveraging real-time camera feed to detect facial expressions. Fully responsive and designed with a cyberpunk aesthetic",
+      cover: "emotionTracker.webp",
+      github: "https://github.com/robdll/emotion-tracker",
+      website: "https://emotion-tracker-khaki.vercel.app/",
     },
     {
       tags: ["Frontend", "Backend"],
@@ -70,6 +70,15 @@ document.addEventListener("DOMContentLoaded", function () {
       cover: "elaisian.webp",
       website: "https://elaisian.com",
       youtube: "https://www.youtube.com/c/Elaisian",
+    },
+    {
+      tags: ["Frontend", "Backend", "AI/ML"],
+      title: "Image Classifier",
+      description:
+        "A web-based Image Classifier built with Next.js and Material-UI, leveraging TensorFlow.js and MobileNet for real-time image classification. Features Materials UI.",
+      cover: "image-classifier.webp",
+      github: "https://github.com/robdll/image-classifier",
+      website: "https://image-classifier-olive.vercel.app/",
     },
     {
       tags: ["Frontend"],
