@@ -1,4 +1,4 @@
-name: Minify CSS
+name: Minify CSS and JS
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master  # Replace with your branch name
 
 jobs:
-  minify-css:
+  minify:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,27 +18,36 @@ jobs:
         with:
           node-version: '16'  # Or your preferred version
 
-      - name: Install clean-css-cli
-        run: npm install clean-css-cli -g
+      - name: Install Minification Tools
+        run: |
+          npm install terser -g
+          npm install clean-css-cli -g
+
+      - name: Minify JavaScript
+        run: |
+          for file in js/*.js; do
+            if [[ "$file" != *.min.js ]]; then
+              terser "$file" -o "js/$(basename "$file" .js).min.js" -c -m
+            fi
+          done
 
       - name: Minify CSS
         run: |
           for file in css/*.css; do
-            # Skip already minified files
             if [[ "$file" != *.min.css ]]; then
               cleancss -o "css/$(basename "$file" .css).min.css" "$file"
             fi
           done
 
-      - name: Commit and push minified CSS files
+      - name: Commit and push all minified files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add css/*.min.css || true
+          git add js/*.min.js css/*.min.css || true
           if git diff-index --quiet HEAD --; then
             echo "No changes to commit"
           else
-            git commit -m "Auto-minify CSS files"
+            git commit -m "Auto-minify JavaScript and CSS files"
             git push
           fi
         env:
