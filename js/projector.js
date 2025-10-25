@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   var cards = [
     {
+      tags: ["Frontend", "Crypto"],
+      title: "MiningOs",
+      description:
+        "Mining Operating System Dashboard built in NextJs and Tailwind",
+      cover: "miningOs.mp4",
+    },
+    {
       tags: ["Frontend"],
       title: "Meu Artelie",
       description:
@@ -8,6 +15,31 @@ document.addEventListener("DOMContentLoaded", function () {
       cover: "meuartelie.webp",
       github: "https://github.com/robdll/meuartelie",
       website: "https://meuartelie.com",
+    },
+    {
+      tags: ["Frontend", "Crypto"],
+      title: "Bitfinex",
+      description:
+        "Bitfinex Trading Platform. Landing and trading pagesfrontend implemented using React",
+      cover: "bitfinex.webp",
+      website: "https://bitfinex.com",
+      xPos: 0,
+    },
+    {
+      tags: ["Frontend", "AI/ML"],
+      title: "MixifyWeb",
+      description:
+        "Ai Tools Webapp to generate images with multiple modelsbuilt in NextJs and TailwindCSS",
+      cover: "mixify.webp",
+      website: "https://www.mixify.com/",
+    },
+    {
+      tags: ["Frontend", "AI/ML"],
+      title: "Make it Real",
+      description:
+        "Ai Tools to generate images based on products and posers created in NextJs",
+      cover: "makeitreal.webp",
+      github: "https://github.com/robdll/make-it-real",
     },
     {
       tags: ["Frontend"],
@@ -19,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       website: "https://robdll.github.io/particles",
     },
     {
-      tags: ["Frontend", "Backend"],
+      tags: ["Frontend", "Backend", "Crypto"],
       title: "Bitphoenix",
       description:
         "Bitcoin Orderbook, Ticker and Trade history written in Reactjs Featuring SCSS modules and Websocket",
@@ -340,6 +372,10 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         flipCardFront.style.backgroundImage =
           "url('resources/" + card.cover + "')";
+        // Add background position if xPos property exists
+        if (card.xPos) {
+          flipCardFront.style.backgroundPositionX = card.xPos;
+        }
       }
 
       const cardResources = document.createElement("div");

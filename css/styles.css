@@ -583,7 +583,6 @@ a#resume:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #fff;
 }
 
 /* workaround to blackened video empty space */
