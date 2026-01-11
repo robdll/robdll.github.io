@@ -13,7 +13,7 @@ document.getElementById("contacts").innerHTML = `
       <span>Visit me on </span>
       <a id="stackoverflow" href="https://stackoverflow.com/users/2324133/robdll" target="_blank">StackOverflow</a></li>
       <span>Checkout my </span>
-      <a id="resume" href="./resources/Rob_Resume_2024.pdf" download>Resume</a></li>
+      <a id="resume" href="./resources/documents/ResumeRob.pdf" download>Resume</a></li>
     </div>
   </div>
 `;

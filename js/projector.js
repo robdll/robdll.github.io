@@ -363,7 +363,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Check if the cover is a video or an image
       if (card.cover.endsWith('.mp4')) {
         const video = document.createElement("video");
-        video.src = "resources/" + card.cover;
+        video.src = "resources/videos/" + card.cover;
         video.autoplay = true;
         video.muted = true;
         video.loop = true;
@@ -371,7 +371,7 @@ document.addEventListener("DOMContentLoaded", function () {
         flipCardFront.appendChild(video);
       } else {
         flipCardFront.style.backgroundImage =
-          "url('resources/" + card.cover + "')";
+          "url('resources/images/" + card.cover + "')";
         // Add background position if xPos property exists
         if (card.xPos) {
           flipCardFront.style.backgroundPositionX = card.xPos;
@@ -383,7 +383,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ['github', 'youtube', 'website'].forEach((resource) => {
         if (card[resource]) {
           const img = document.createElement("img");
-          img.src = `resources/${resource}.svg`;
+          img.src = `resources/icons/${resource}.svg`;
           img.alt = `${resource} logo`;
           img.loading = "lazy";
           const link = document.createElement("a");

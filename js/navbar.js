@@ -1,7 +1,7 @@
 document.getElementById("navbar-container").innerHTML = `
   <nav>
     <a href="/">
-      <img class="nav--logo" src="resources/robdll-logo.svg" alt="robdll logo">
+      <img class="nav--logo" src="resources/icons/robdll-logo.svg" alt="robdll logo">
     </a>
     <ul id="navbar" class="nav--link-container">
       <li><a class="nav--link" href="/">Home</a></li>

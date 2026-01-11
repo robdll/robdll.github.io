@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const videoSrc = './resources/RobLogoAnimation.webm';
+  const videoSrc = './resources/videos/RobLogoAnimation.webm';
   const modal = document.getElementById("gifModal");
   const video = document.getElementById("animatedGif"); // This now targets the video element
   const logo = document.querySelector(".nav--logo");

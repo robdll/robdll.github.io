@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://robdll/sitemap.xml
+Sitemap: https://robdll.com/sitemap.xml
